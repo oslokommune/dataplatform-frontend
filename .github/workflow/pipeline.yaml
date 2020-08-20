@@ -1,0 +1,63 @@
+name: Pipeline
+
+on:
+  push:
+    branches: master
+
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          always-auth: true
+          registry-url: https://npm.pkg.github.com
+          scope: "@tuuturu"
+      - run: npm ci
+      - run: npm run build
+
+  bump:
+    name: Bump version
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1 # Fetch code
+        with:
+          ref: ${{ github.ref }}
+      - name: "Automated Version Bump"
+        uses: "phips28/gh-action-bump-version@master"
+        with:
+          tag-prefix: ""
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    name: Publish Docker image
+    needs: bump
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: echo "::set-env name=RELEASE_VERSION::$(jq -r .version package.json)"
+
+      - name: Publish Docker image
+        uses: elgohr/Publish-Docker-Github-Action@2.14
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # The name of the image you would like to push
+          name: tuuturu/motoblog-admin/admin
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          tags: "latest,${{ env.RELEASE_VERSION }}"
+          buildargs: NPM_TOKEN
