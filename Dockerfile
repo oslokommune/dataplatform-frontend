@@ -5,7 +5,6 @@ ARG NPM_TOKEN
 WORKDIR /build
 
 COPY package*.json ./
-COPY .npmrc ./
 
 RUN npm ci
 
@@ -17,8 +16,6 @@ WORKDIR /build
 COPY --from=dep-stage /build/node_modules ./node_modules
 
 COPY .eslintrc.js .
-COPY .eslintignore .
-COPY .prettierrc.yaml .
 COPY babel.config.js .
 COPY package*.json ./
 
