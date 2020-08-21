@@ -55,7 +55,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           # The name of the image you would like to push
-          name: tuuturu/motoblog-admin/admin
+          name: oslokommune/dataplatform-frontend/dataplatform-frontend
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
