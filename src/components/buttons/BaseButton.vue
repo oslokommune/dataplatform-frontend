@@ -7,7 +7,7 @@
       secondaryOnDark,
       danger,
       remove,
-      disabled,
+      disabled
     }"
     class="BaseButton"
     v-on="$listeners"
@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import IconSpinner from "~/components/icons/IconSpinner";
+import IconSpinner from '~/components/icons/IconSpinner'
 
 export default {
-  name: "BaseButton",
+  name: 'BaseButton',
   components: { IconSpinner },
   props: {
     primary: Boolean,
@@ -33,14 +33,14 @@ export default {
     danger: Boolean,
     remove: Boolean,
     disabled: Boolean,
-    showLoader: Boolean,
-  },
-};
+    showLoader: Boolean
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-@import "assets/variables";
-@import "assets/mixins";
+@import 'assets/variables';
+@import 'assets/mixins';
 
 .BaseButton {
   @include buttonStyle;
