@@ -1,14 +1,14 @@
 <template>
-  <header class="footer">
+  <footer>
     <div class="centered-container">
       <div class="logo">
         <IconOsloLogo />
       </div>
       <div class="footer-content">
-        dataplattform
+        Dataplattform
       </div>
     </div>
-  </header>
+  </footer>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/variables";
 
-.footer {
+footer {
   border-top: $separator-border;
   padding-top: 1em;
   padding-bottom: 4em;

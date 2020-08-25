@@ -1,16 +1,14 @@
 <template>
-  <main>
-    <section>
-      <div id="app">
-        <div id="nav">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
-        </div>
-        <router-view />
-      </div>
-      <Footer />
-    </section>
-  </main>
+  <div id="app">
+    <header>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </header>
+    <main>
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 <script>
 import Footer from "./views/Footer";
@@ -26,7 +24,6 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
 html {
@@ -42,11 +39,20 @@ html {
 }
 
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px;
   min-height: 100%;
   background: #ffffff;
   color: $font-color;
   line-height: 1.5;
   font-weight: 300;
+}
+header {
+  text-align: center;
+}
+main {
+  text-align: center;
 }
 a {
   color: $font-color;
