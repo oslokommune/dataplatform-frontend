@@ -1,53 +1,32 @@
 <template>
   <div id="app">
     <header>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Datasetliste</router-link> |
+      <router-link to="/datasetdetails">Dataset-detaljer</router-link>
     </header>
-    <main>
+    <main class=".centered-container full-width">
       <router-view />
     </main>
     <Footer />
   </div>
 </template>
 <script>
-import Footer from "./views/Footer";
+import Footer from './components/BaseComponents/Footer'
 export default {
   components: {
-    Footer,
-  },
-};
+    Footer
+  }
+}
 </script>
 <style lang="scss">
-@import "assets/variables";
+@import 'assets/variables';
+@import 'assets/common';
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  height: 100%;
-  font-family: $font-family;
-  word-spacing: 1px;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-
-  // Stop scrollbar from making the page jump to the side as scrollbar is enabled/disabled
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 8px;
-  min-height: 100%;
-  background: #ffffff;
-  color: $font-color;
-  line-height: 1.5;
-  font-weight: 300;
-}
 header {
   text-align: center;
 }
