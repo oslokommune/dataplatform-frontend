@@ -1,6 +1,5 @@
 @import '@/assets/variables';
-// The following two classes controls content width and gutters/margins.
-// The first is wider than the second, and is used to align content with the header-content width
+
 html {
   height: 100%;
   font-family: $font-family;
@@ -24,6 +23,8 @@ body {
   font-weight: 300;
 }
 
+// The following two classes controls content width and gutters/margins.
+// The first is wider than the second, and is used to align content with the header-content width
 .centered-container {
   max-width: $container-width;
   width: calc(100% - 4rem);
