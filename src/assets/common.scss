@@ -1,0 +1,43 @@
+@import '@/assets/variables';
+// The following two classes controls content width and gutters/margins.
+// The first is wider than the second, and is used to align content with the header-content width
+html {
+  height: 100%;
+  font-family: $font-family;
+  word-spacing: 1px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  // Stop scrollbar from making the page jump to the side as scrollbar is enabled/disabled
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 8px;
+  min-height: 100%;
+  background: #ffffff;
+  color: $font-color;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.centered-container {
+  max-width: $container-width;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.centered-small-container {
+  max-width: $small-screen;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.full-height {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
