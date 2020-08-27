@@ -4,25 +4,23 @@
       <div class="logo">
         <IconOsloLogo />
       </div>
-      <div class="footer-content">
-        Dataplattform
-      </div>
+      <div class="footer-content">Dataplattform</div>
     </div>
   </footer>
 </template>
 
 <script>
-import IconOsloLogo from "../components/icons/IconOsloLogo";
+import IconOsloLogo from '../icons/IconOsloLogo'
 
 export default {
   components: {
     IconOsloLogo,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/variables";
+@import '@/assets/variables';
 
 footer {
   border-top: $separator-border;
@@ -30,6 +28,7 @@ footer {
   padding-bottom: 4em;
 }
 .centered-container {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

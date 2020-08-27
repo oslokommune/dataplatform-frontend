@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: "ClickableWrapper",
-};
+  name: 'ClickableWrapper',
+}
 </script>
 
 <style lang="scss" scoped>
-@import "assets/variables";
+@import 'assets/variables';
 
 .ClickableWrapper {
   padding: 0;

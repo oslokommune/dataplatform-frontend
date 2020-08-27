@@ -20,10 +20,10 @@
 </template>
 
 <script>
-import IconSpinner from "~/components/icons/IconSpinner";
+import IconSpinner from '~/components/icons/IconSpinner'
 
 export default {
-  name: "BaseButton",
+  name: 'BaseButton',
   components: { IconSpinner },
   props: {
     primary: Boolean,
@@ -35,12 +35,12 @@ export default {
     disabled: Boolean,
     showLoader: Boolean,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
-@import "assets/variables";
-@import "assets/mixins";
+@import 'assets/variables';
+@import 'assets/mixins';
 
 .BaseButton {
   @include buttonStyle;

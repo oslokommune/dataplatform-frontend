@@ -9,7 +9,7 @@ export default {
   props: {
     callbackFunction: Function,
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
