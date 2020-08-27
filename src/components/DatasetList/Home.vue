@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Dine dataset</h1>
+    <h1>Dine datasett</h1>
   </div>
 </template>
 
