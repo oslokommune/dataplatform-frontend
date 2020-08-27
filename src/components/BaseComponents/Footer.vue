@@ -4,9 +4,7 @@
       <div class="logo">
         <IconOsloLogo />
       </div>
-      <div class="footer-content">
-        Dataplattform
-      </div>
+      <div class="footer-content">Dataplattform</div>
     </div>
   </footer>
 </template>
@@ -16,8 +14,8 @@ import IconOsloLogo from '../icons/IconOsloLogo'
 
 export default {
   components: {
-    IconOsloLogo
-  }
+    IconOsloLogo,
+  },
 }
 </script>
 

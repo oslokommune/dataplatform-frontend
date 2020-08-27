@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'ClickableWrapper'
+  name: 'ClickableWrapper',
 }
 </script>
 

@@ -16,8 +16,8 @@
 import Footer from './components/BaseComponents/Footer'
 export default {
   components: {
-    Footer
-  }
+    Footer,
+  },
 }
 </script>
 <style lang="scss">

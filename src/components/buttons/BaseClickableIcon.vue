@@ -7,7 +7,7 @@
 <script>
 export default {
   // This component wraps an icon and makes sure it's at least 44*44 px for accessibility
-  name: 'BaseClickableIcon'
+  name: 'BaseClickableIcon',
 }
 </script>
 

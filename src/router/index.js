@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/datasetdetails',
@@ -19,12 +19,12 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "about" */ '../components/DatasetDetails/DatasetDetails.vue'
-      )
-  }
+      ),
+  },
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
 })
 
 export default router

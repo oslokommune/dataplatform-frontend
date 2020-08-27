@@ -7,7 +7,7 @@
       secondaryOnDark,
       danger,
       remove,
-      disabled
+      disabled,
     }"
     class="BaseButton"
     v-on="$listeners"
@@ -33,8 +33,8 @@ export default {
     danger: Boolean,
     remove: Boolean,
     disabled: Boolean,
-    showLoader: Boolean
-  }
+    showLoader: Boolean,
+  },
 }
 </script>
 
