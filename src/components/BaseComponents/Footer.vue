@@ -30,6 +30,7 @@ footer {
   padding-bottom: 4em;
 }
 .centered-container {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
