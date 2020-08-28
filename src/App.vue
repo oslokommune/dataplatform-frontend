@@ -1,12 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="page">
     <header>
-      <nav>
-        <router-link to="/">Datasettliste</router-link> |
-        <router-link to="/datasetdetails">Datasettdetaljer</router-link>
-      </nav>
+      <nav></nav>
     </header>
-    <main class="centered-container full-width">
+    <main class="centered-container full-height">
       <router-view />
     </main>
     <Footer />
