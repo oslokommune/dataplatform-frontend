@@ -6,18 +6,18 @@ shows only when the row is expanded.
 <template>
   <div class="expandable-row">
     <div class="expand-collapse">
-      <div class="user">
+      <div class="field">
         <slot name="title" />
       </div>
-      <div class="user">
-        <slot name="state" />
+      <div class="field">
+        <slot name="date" />
       </div>
       <div class="stateAndExpandCollapse">
-        <div class="user">
+        <div class="field">
           <slot name="status" />
         </div>
-        <div class="icon">
-          <slot name="icon" />
+        <div class="field">
+          <slot name="edit" />
         </div>
         <ExpandCollapseIcon
           :expanded="expanded"
@@ -33,7 +33,7 @@ shows only when the row is expanded.
 </template>
 
 <script>
-import ExpandCollapseIcon from './components/icons/ExpandCollapseIcon'
+import ExpandCollapseIcon from '@/components/icons/ExpandCollapseIcon'
 
 export default {
   name: 'ExpandableRow',
@@ -50,7 +50,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/variables';
-@import '@/assets/mixins';
 
 .expandable-row {
   font-size: 18px;
@@ -58,6 +57,8 @@ export default {
   padding-right: 0.8em;
   border-top: $separator-border;
   text-align: left;
+  margin-top: 3em;
+  overflow-y: auto;
 
   &:last-of-type {
     border-bottom: $separator-border;
@@ -77,11 +78,10 @@ export default {
     width: 50%;
   }
 
-  .user {
+  .field {
     padding-right: 1em;
 
     > a {
-      @include textEllipsis;
       display: block;
     }
   }

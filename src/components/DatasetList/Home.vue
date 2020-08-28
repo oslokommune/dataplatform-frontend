@@ -1,12 +1,18 @@
 <template>
-  <div class="dataset-list">
-    <!--v-if datasetlist.length > 0-->
+  <div class="dataset-list" v-if="datasets.length > 0">
     <!--v for datasetlist-->
-    <ExpandableRow>
+    <div class="intro">
+      <h1>Dine datasett</h1>
+      <p>Her finner du informasjon om de datasettene du eier</p>
+    </div>
+    <ExpandableRow
+      v-for="datasetobject in filteredDatasets"
+      :key="datasetobject.id"
+    >
       <template v-slot:title>
-        <p>Besøksdata</p>
+        <p>{{ datasetobject.title }}</p>
       </template>
-      <template v-slot:state>
+      <template v-slot:date>
         <p>2020-01-01 12:01:01</p>
       </template>
       <template v-slot:status>
@@ -22,22 +28,22 @@
           <p>Feil struktur</p>
         </div>
       </template>
-      <template v-slot:icon>
+      <template v-slot:edit>
         <a href="#"> <IconOpenInNew /></a>
       </template>
     </ExpandableRow>
-    <!--<div v-else>
-        <p>Du har ingen datasett</p>
-      </div>-->
+  </div>
+  <div v-else>
+    <p>Du har ingen datasett</p>
   </div>
 </template>
 
 <script>
-import IconFailedCircle from './components/icons/IconFailedCircle'
+import IconFailedCircle from '@/components/icons/IconFailedCircle'
 //import IconCheckCircle from '@/components/icons/IconCheckCircle'
-import IconOpenInNew from './components/icons/IconOpenInNew'
-import ExpandableRow from './components/LayoutComponents/ExpandableRow'
-
+import IconOpenInNew from '@/components/icons/IconOpenInNew'
+import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
+import datasets from '@/assets/mock/dataset.json'
 export default {
   name: 'DatasetList',
   components: {
@@ -48,16 +54,26 @@ export default {
   },
   data() {
     return {
-      title: 'Tittel',
+      datasets: datasets,
+      owner: 'Deichman',
     }
+  },
+  computed: {
+    filteredDatasets() {
+      return this.datasets.filter((dataset) => {
+        return dataset.publisher === this.owner
+      })
+    },
   },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/variables';
-
-h2 {
+.intro {
+  text-align: left;
+}
+h1 {
   margin-bottom: 0.3em;
 }
 .IconCheckCircle {
@@ -72,12 +88,3 @@ h2 {
   font-weight: 500;
 }
 </style>
-
-<script>
-// @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-}
-</script>
