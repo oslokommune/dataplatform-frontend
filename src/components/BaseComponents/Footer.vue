@@ -26,6 +26,7 @@ footer {
   border-top: $separator-border;
   padding-top: 1em;
   padding-bottom: 4em;
+  margin-top: $footer-top-margin;
 }
 .centered-container {
   max-width: 100%;

@@ -1,0 +1,49 @@
+[
+  {
+    "s3path": "raw/green/test-av-frontend-opplasting/version=1/edition=20200311T065948/data.json",
+    "date_started": "2020-03-11T06:59:56.954210",
+    "status_body": "N/A",
+    "handler": "data-uploader",
+    "status": "OK",
+    "application_id": "test-av-frontend-opplasting",
+    "event_id": "50442b7f-abef-419d-913f-dfe292de38b7",
+    "run_status": "STARTED",
+    "user": "data-uploader",
+    "application": "dataset",
+    "id": "test-av-frontend-opplasting-8c8f52f5-6ac4-44a3-80ab-e7972a04ec86",
+    "date_end": "N/A"
+  },
+  {
+    "date_started": "2020-03-11T07:00:30.193519",
+    "status_body": {
+      "files": [
+        "processed/green/test-av-frontend-opplasting/version=1/edition=20200311T065948/data.csv"
+      ],
+      "latest": false
+    },
+    "handler": "copy",
+    "s3_path": "N/A",
+    "status": "OK",
+    "application_id": "na",
+    "event_id": "f86e2d7c-a3b1-402c-9098-bba82c489964",
+    "run_status": "CONTINUE",
+    "user": "na",
+    "application": "s3-writer",
+    "id": "test-av-frontend-opplasting-8c8f52f5-6ac4-44a3-80ab-e7972a04ec86",
+    "date_end": "2020-03-11T07:00:37.099029"
+  },
+  {
+    "date_started": "2020-03-11T07:00:41.873833",
+    "status_body": {},
+    "handler": "pipeline-instance",
+    "s3_path": "N/A",
+    "status": "OK",
+    "application_id": "na",
+    "event_id": "98c1632d-82a8-4100-9df5-e9b6195793b2",
+    "run_status": "FINISHED",
+    "user": "system",
+    "application": "dataset",
+    "id": "test-av-frontend-opplasting-8c8f52f5-6ac4-44a3-80ab-e7972a04ec86",
+    "date_end": "2020-03-11T07:00:41.873852"
+  }
+]

@@ -65,5 +65,20 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
-  }
+  },
+  "description": "Frontend-project for dataplatform",
+  "main": "",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oslokommune/dataplatform-frontend.git"
+  },
+  "author": "Oslo Origo",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/oslokommune/dataplatform-frontend/issues"
+  },
+  "homepage": "https://github.com/oslokommune/dataplatform-frontend#readme"
 }

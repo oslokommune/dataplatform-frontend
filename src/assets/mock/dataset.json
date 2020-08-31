@@ -1,0 +1,3560 @@
+[
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["utdanning"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Aldersdistribusjon fordelt p\u00e5 kj\u00f8nn",
+    "Id": "alder-distribusjon-status",
+    "title": "Alder distribusjon status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/alder-distribusjon-status" } }
+  },
+  {
+    "theme": ["Friluftsliv"],
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["badetemperatur"],
+    "objective": "Tilgjengeliggj\u00f8re badetemperaturer",
+    "description": "Badetemperaturer registrert ved badeplasser i Oslo kommune.\n\nSiste registrerte verdier kan hentes fra badetemperatur-api: https://developer.oslo.kommune.no/katalog/apis/67/introduction",
+    "Id": "badetemperatur",
+    "title": "Badetemperaturer Oslo",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/badetemperatur" } }
+  },
+  {
+    "theme": "Friluftsliv",
+    "processing_stage": "raw",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["badetemperatur"],
+    "objective": "Tilgjengeliggj\u00f8re badetemperaturer",
+    "description": "Sanntidsstr\u00f8m med manuelt registrerte badetemperaturer i Oslo kommune. For uthenting av verdier, se samlet datasett for badetemperaturer fra flere kilder: https://developer.oslo.kommune.no/katalog/data/badetemperatur\n",
+    "Id": "badetemperatur-manuelt-registrerte",
+    "title": "Badetemperatur manuelt registrerte",
+    "parent_id": null,
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/badetemperatur-manuelt-registrerte" }
+    }
+  },
+  {
+    "theme": "Friluftsliv",
+    "processing_stage": "raw",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["badetemperatur"],
+    "objective": "Tilgjengeliggj\u00f8re badetemperaturer",
+    "description": "Sanntidsstr\u00f8m med badetemperaturer fra Vicotee sensorer. *Utg\u00e5tt*",
+    "Id": "badetemperatur-sensordata-fra-vicotee",
+    "title": "Badetemperatur sensordata fra Vicotee",
+    "parent_id": null,
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/badetemperatur-sensordata-fra-vicotee" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "yellow",
+    "keywords": ["befolkning", "folkemengde", "kj\u00f8nn", "alder"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Befolkningen etter bydel, delbydel, kj\u00f8nn og 1-\u00e5rs aldersgrupper",
+    "Id": "befolkning-etter-kjonn-og-alder",
+    "title": "Befolkning etter kj\u00f8nn og alder",
+    "parent_id": null,
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/befolkning-etter-kjonn-og-alder" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "framskrivning", "prognose"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Befolkningsframskrivninger",
+    "Id": "befolkningsframskrivninger",
+    "title": "Befolkningsframskrivninger",
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/befolkningsframskrivninger" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Befolkningsutvikling og forventet utvikling",
+    "Id": "befolkningsutvikling-og-forventet-utvikling",
+    "title": "Befolkningsutvikling og forventet utvikling",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/befolkningsutvikling-og-forventet-utvikling"
+      }
+    }
+  },
+  {
+    "theme": ["Natur, klima og milj\u00f8", "Avfallsh\u00e5ndtering"],
+    "processing_stage": "raw",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["gjenvinning", "gjenbruk", "gjenbruksstasjoner"],
+    "objective": "Kartlegge trafikk p\u00e5 gjenbruksstasjoner",
+    "description": "Bes\u00f8ksdata gjenbruksstasjoner",
+    "Id": "besoksdata-gjenbruksstasjoner",
+    "title": "Bes\u00f8ksdata gjenbruksstasjoner",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/besoksdata-gjenbruksstasjoner" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["bolig", "boligtype", "hustype", "matrikkelen"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antallet boliger etter boligtype.\n\nTallene for 2001 er hentet fra folke- og boligtellingen i november 2001, mens tallene for de andre \u00e5rene er hentet fra Matrikkelen.",
+    "Id": "boligmengde-etter-boligtype",
+    "title": "Boligmengde etter boligtype",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/boligmengde-etter-boligtype" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["bolig", "boligpriser", "leiligheter"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antallet omsatte blokkleiligheter etter pris.\n\nDatagrunnlag svaret til tabellen \"Omsatte boliger og kvadratmeterpris (D)\" i statistikkbanken, men data bare for blokkleiligheter. Se denne tabellen for n\u00e6rmere info om datagrunnlaget",
+    "Id": "boligpriser-blokkleiligheter",
+    "title": "Boligpriser blokkleiligheter",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/boligpriser-blokkleiligheter" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bolig", "boligpriser", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Boligpriser blokkleiligheter historisk",
+    "Id": "boligpriser-blokkleiligheter-historisk",
+    "title": "Boligpriser blokkleiligheter historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/boligpriser-blokkleiligheter-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bolig", "boligpriser", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Boligpriser blokkleiligheter for innev\u00e6rende \u00e5r",
+    "Id": "boligpriser-blokkleiligheter-status",
+    "title": "Boligpriser blokkleiligheter status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/boligpriser-blokkleiligheter-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "botid", "innvandrere", "innvandringskategori"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Viser befolkningen etter botid og innvandringskategori",
+    "Id": "botid",
+    "title": "Botid",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/botid" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "botid", "innvandrere"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Viser befolkningen etter botid og innvandringskategori",
+    "Id": "botid-ikke-vestlige",
+    "title": "Botid - ikke vestlige",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/botid-ikke-vestlige" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "botid", "ikke vestlige"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Botid ikke vestlige historisk",
+    "Id": "botid-ikke-vestlige-historisk",
+    "title": "Botid ikke vestlige historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/botid-ikke-vestlige-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "botid", "ikke vestlige"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Botid ikke vestlige status",
+    "Id": "botid-ikke-vestlige-status",
+    "title": "Botid ikke vestlige status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/botid-ikke-vestlige-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Datagrunnlag for visualisering i faktaark",
+    "Id": "bydelsfakta-grafdata",
+    "title": "Bydelsfakta grafdata",
+    "parent_id": null,
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bydelsfakta-grafdata" } }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper alle historisk",
+    "Id": "bygningstyper-alle-historisk",
+    "title": "Bygningstyper alle historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-alle-historisk" } }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper alle status",
+    "Id": "bygningstyper-alle-status",
+    "title": "Bygningstyper alle status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-alle-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper", "enebolig", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper blokk historisk",
+    "Id": "bygningstyper-blokk-historisk",
+    "title": "Bygningstyper blokk historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-blokk-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper", "enebolig", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper blokk status",
+    "Id": "bygningstyper-blokk-status",
+    "title": "Bygningstyper blokk status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-blokk-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper", "rekkehus", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper enebolig historisk",
+    "Id": "bygningstyper-enebolig-historisk",
+    "title": "Bygningstyper enebolig historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/bygningstyper-enebolig-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper", "rekkehus", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper enebolig status",
+    "Id": "bygningstyper-enebolig-status",
+    "title": "Bygningstyper enebolig status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-enebolig-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper rekkehus historisk",
+    "Id": "bygningstyper-rekkehus-historisk",
+    "title": "Bygningstyper rekkehus historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/bygningstyper-rekkehus-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper rekkehus status",
+    "Id": "bygningstyper-rekkehus-status",
+    "title": "Bygningstyper rekkehus status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-rekkehus-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper totalt historisk",
+    "Id": "bygningstyper-totalt-historisk",
+    "title": "Bygningstyper totalt historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-totalt-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bygningstyper"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Bygningstyper totalt status",
+    "Id": "bygningstyper-totalt-status",
+    "title": "Bygningstyper totalt status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/bygningstyper-totalt-status" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman bes\u00f8k manuelle registreringer",
+    "Id": "deichman-besok-manuelle-registreringer",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman bes\u00f8k manuelle registreringer",
+    "_links": {
+      "self": { "href": "/datasets/deichman-besok-manuelle-registreringer" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman counterstat",
+    "Id": "deichman-counterstat",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman counterstat",
+    "_links": { "self": { "href": "/datasets/deichman-counterstat" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman counterstat bes\u00f8k",
+    "Id": "deichman-counterstat-besok",
+    "Type": "Dataset",
+    "parent_id": "deichman-counterstat",
+    "accessRights": "restricted",
+    "title": "Deichman counterstat bes\u00f8k",
+    "_links": { "self": { "href": "/datasets/deichman-counterstat-besok" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman ebokbib",
+    "Id": "deichman-ebokbib",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman ebokbib",
+    "_links": { "self": { "href": "/datasets/deichman-ebokbib" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman fuge",
+    "Id": "deichman-fuge",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman fuge",
+    "_links": { "self": { "href": "/datasets/deichman-fuge" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge utgivelsesformater",
+    "Id": "deichman-fuge-utgivelse-x-format",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Utgivelse-X-format",
+    "_links": {
+      "self": { "href": "/datasets/deichman-fuge-utgivelse-x-format" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Utgivelsesspr\u00e5k",
+    "Id": "deichman-fuge-utgivelse-x-sprak",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Utgivelse-X-spr\u00e5k",
+    "_links": {
+      "self": { "href": "/datasets/deichman-fuge-utgivelse-x-sprak" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Utgivelser",
+    "Id": "deichman-fuge-utgivelser",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge - Utgivelser",
+    "parent_id": "deichman-fuge",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-utgivelser" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Verk",
+    "Id": "deichman-fuge-verk",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge - Verk",
+    "parent_id": "deichman-fuge",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Bidragsytere p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-bidragsyter",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-bidragsyter",
+    "_links": {
+      "self": { "href": "/datasets/deichman-fuge-verk-x-bidragsyter" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Emner p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-emne",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-emne",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk-x-emne" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Litter\u00e6r form p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-form",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-form",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk-x-form" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Klassifikasjonskode p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-klassifikasjonskode",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-klassifikasjonskode",
+    "_links": {
+      "self": { "href": "/datasets/deichman-fuge-verk-x-klassifikasjonskode" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - M\u00e5lgruppe til verk",
+    "Id": "deichman-fuge-verk-x-malgruppe",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-m\u00e5lgruppe",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk-x-malgruppe" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Opprinnelsesland til verk",
+    "Id": "deichman-fuge-verk-x-opprinnelsesland",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-opprinnelsesland",
+    "_links": {
+      "self": { "href": "/datasets/deichman-fuge-verk-x-opprinnelsesland" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Sjanger p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-sjanger",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-sjanger",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk-x-sjanger" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Fuge - Spr\u00e5k p\u00e5 verk",
+    "Id": "deichman-fuge-verk-x-sprak",
+    "Type": "Dataset",
+    "parent_id": "deichman-fuge",
+    "accessRights": "restricted",
+    "title": "Deichman Fuge Verk-X-spr\u00e5k",
+    "_links": { "self": { "href": "/datasets/deichman-fuge-verk-x-sprak" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha",
+    "Id": "deichman-koha",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Deichman Koha",
+    "_links": { "self": { "href": "/datasets/deichman-koha" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha Avdelinger",
+    "Id": "deichman-koha-avdelinger",
+    "Type": "Dataset",
+    "parent_id": "deichman-koha",
+    "accessRights": "restricted",
+    "title": "Deichman Koha Avdelinger",
+    "_links": { "self": { "href": "/datasets/deichman-koha-avdelinger" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha Brukere",
+    "Id": "deichman-koha-brukere",
+    "Type": "Dataset",
+    "parent_id": "deichman-koha",
+    "accessRights": "restricted",
+    "title": "Deichman Koha Brukere",
+    "_links": { "self": { "href": "/datasets/deichman-koha-brukere" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha Eksemplarer",
+    "Id": "deichman-koha-eksemplarer",
+    "Type": "Dataset",
+    "parent_id": "deichman-koha",
+    "accessRights": "restricted",
+    "title": "Deichman Koha Eksemplarer",
+    "_links": { "self": { "href": "/datasets/deichman-koha-eksemplarer" } }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha Eksemplarer tidsakse",
+    "Id": "deichman-koha-eksemplarer-tidsakse",
+    "Type": "Dataset",
+    "parent_id": "deichman-koha",
+    "accessRights": "restricted",
+    "title": "Deichman Koha Eksemplarer tidsakse",
+    "_links": {
+      "self": { "href": "/datasets/deichman-koha-eksemplarer-tidsakse" }
+    }
+  },
+  {
+    "publisher": "Deichman",
+    "confidentiality": "yellow",
+    "keywords": ["deichman"],
+    "objective": "Stats to the people!",
+    "contactPoint": {
+      "name": "Ragnhild Holgersen",
+      "phone": "90026879",
+      "email": "ragnhild.holgersen@deichman.no"
+    },
+    "description": "Deichman Koha Transaksjoner",
+    "Id": "deichman-koha-transaksjoner",
+    "Type": "Dataset",
+    "parent_id": "deichman-koha",
+    "accessRights": "restricted",
+    "title": "Deichman Koha Transaksjoner",
+    "_links": { "self": { "href": "/datasets/deichman-koha-transaksjoner" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "d\u00f8de"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antall d\u00f8de",
+    "Id": "dode",
+    "title": "D\u00f8de",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/dode" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["d\u00f8de", "befolkning", "d\u00f8dsrater"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Et gjennomsnitt for \u00e5rene 2009-2016 basert p\u00e5 d\u00f8dsrater p\u00e5 5-\u00e5rige aldersgruppene og kj\u00f8nn for personer 50-74 \u00e5r.",
+    "Id": "dodsrater",
+    "title": "D\u00f8dsrater",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/dodsrater" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r D\u00f8dsrater historisk",
+    "Id": "dodsrater-historisk",
+    "title": "D\u00f8dsrater historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/dodsrater-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r D\u00f8dsrater status",
+    "Id": "dodsrater-status",
+    "title": "D\u00f8dsrater status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/dodsrater-status" } }
+  },
+  {
+    "publisher": "H\u00e5vard Eide",
+    "confidentiality": "green",
+    "keywords": ["eide", "test"],
+    "objective": "The objective for this eide",
+    "contactPoint": {
+      "name": "H\u00e5vard Eide",
+      "phone": "1122334455",
+      "email": "havard.eide@byr.oslo.kommune.no"
+    },
+    "description": "Describe the eide test",
+    "Id": "eide-test",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "eide test",
+    "_links": { "self": { "href": "/datasets/eide-test" } }
+  },
+  {
+    "publisher": "H\u00e5vard Eide",
+    "confidentiality": "green",
+    "keywords": ["eide", "test"],
+    "objective": "The objective for this eide",
+    "contactPoint": {
+      "name": "H\u00e5vard Eide",
+      "phone": "1122334455",
+      "email": "havard.eide@byr.oslo.kommune.no"
+    },
+    "description": "Describe the eide test",
+    "Id": "eide-test-BNfvc",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "eide test",
+    "_links": { "self": { "href": "/datasets/eide-test-BNfvc" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "husholdninger", "eieform"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Husholdninger uten studenter etter eieform",
+    "Id": "eieform",
+    "title": "Eieform",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/eieform" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bolig", "eieform", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Eieform historisk",
+    "Id": "eieform-historisk",
+    "title": "Eieform historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/eieform-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["bolig", "eieform", "leiligheter"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Eieform status",
+    "Id": "eieform-status",
+    "title": "Eieform status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/eieform-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["lavinntekt", "husholdning", "fattigdom", "levek\u00e5r"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Tidsserie for antall og andel av barnehusholdninger som lever p\u00e5 under 60 % av median inntekt",
+    "Id": "fattige-barnehusholdninger-historisk",
+    "title": "Fattige barnehusholdninger historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/fattige-barnehusholdninger-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["lavinntekt", "husholdning", "fattigdom", "levek\u00e5r"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel av barnehusholdninger som levde p\u00e5 under 60 % av median inntekt i 2016",
+    "Id": "fattige-barnehusholdninger-status",
+    "title": "Fattige barnehusholdninger status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/fattige-barnehusholdninger-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": [
+      "befolkning",
+      "husholdninger",
+      "fattige",
+      "barn",
+      "inntekt",
+      "eu-skala"
+    ],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Tallene er hentet fra tabellen: Husholdninger med lav inntekt korrigert for formue (D)\" i statistikkbanken. Studenter er ikke med i tabellen. Se denne tabellen for n\u00e6rmere info om datagrunnlaget. ",
+    "Id": "fattige-husholdninger",
+    "title": "Fattige husholdninger",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/fattige-husholdninger" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Flyttehyppighet inn.kat. historisk",
+    "Id": "flyttehyppighet-inn-kat-historisk",
+    "title": "Flyttehyppighet inn.kat. historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/flyttehyppighet-inn-kat-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Flyttehyppighet inn.kat. status",
+    "Id": "flyttehyppighet-inn-kat-status",
+    "title": "Flyttehyppighet inn.kat. status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/flyttehyppighet-inn-kat-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Flyttehyppighet totalt historisk",
+    "Id": "flyttehyppighet-totalt-historisk",
+    "title": "Flyttehyppighet totalt historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/flyttehyppighet-totalt-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Flyttehyppighet totalt status",
+    "Id": "flyttehyppighet-totalt-status",
+    "title": "Flyttehyppighet totalt status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/flyttehyppighet-totalt-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "flytting", "alder"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Flytting fra bydel aldersgrupper",
+    "Id": "flytting-fra-etter-alder",
+    "title": "Flytting fra etter alder",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/flytting-fra-etter-alder" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": [
+      "befolkning",
+      "flytting",
+      "innvandrere",
+      "innvandringskategori"
+    ],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Flytting fra bydel etter innvandirngskategori",
+    "Id": "flytting-fra-etter-inn-kat",
+    "title": "Flytting fra etter inn.kat.",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/flytting-fra-etter-inn-kat" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "flytting", "alder"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Flytting til bydel aldersgrupper",
+    "Id": "flytting-til-etter-alder",
+    "title": "Flytting til etter alder",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/flytting-til-etter-alder" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": [
+      "befolkning",
+      "flytting",
+      "innvandrere",
+      "innvandringskategori"
+    ],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Flytting til bydel etter innvandirngskategori",
+    "Id": "flytting-til-etter-inn-kat",
+    "title": "Flytting til etter inn.kat.",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/flytting-til-etter-inn-kat" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "f\u00f8dte"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antall f\u00f8dte",
+    "Id": "fodte",
+    "title": "F\u00f8dte",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/fodte" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Folkemengde utvikling historisk",
+    "Id": "folkemengde-utvikling-historisk",
+    "title": "Folkemengde utvikling historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/folkemengde-utvikling-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Folkemengde utvikling historisk prosent",
+    "Id": "folkemengde-utvikling-historisk-prosent",
+    "title": "Folkemengde utvikling historisk prosent",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/folkemengde-utvikling-historisk-prosent" }
+    }
+  },
+  {
+    "publisher": "Origo Dataplattform",
+    "confidentiality": "green",
+    "keywords": ["reg"],
+    "objective": "Monitorere trafikk mot statisk nettside",
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "description": "Datasett for \u00e5 lagre tidsserie av klikk p\u00e5 statisk nettside med bilder av k\u00f8 p\u00e5 gjenbruksstasjoner",
+    "Id": "gjenbruksstasjoner-bildeside-klikk",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "Gjenbruksstasjoner bildeside klikk",
+    "_links": {
+      "self": { "href": "/datasets/gjenbruksstasjoner-bildeside-klikk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "boliger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Husholdning totalt historisk",
+    "Id": "husholdning-totalt-historisk",
+    "title": "Husholdning totalt historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdning-totalt-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "boliger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Husholdning totalt status",
+    "Id": "husholdning-totalt-status",
+    "title": "Husholdning totalt status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdning-totalt-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": [
+      "befolkning",
+      "husholdninger",
+      "trangbodde",
+      "personer per rom"
+    ],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antallet husholdninger etter antallet person per rom.",
+    "Id": "husholdninger-etter-rom-per-person",
+    "title": "Husholdninger etter rom per person",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-etter-rom-per-person" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 1 barn",
+    "Id": "husholdninger-med-1-barn",
+    "title": "Husholdninger med 1 barn",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdninger-med-1-barn" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 1 barn historisk",
+    "Id": "husholdninger-med-1-barn-historisk",
+    "title": "Husholdninger med 1 barn historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-1-barn-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 1 barn status",
+    "Id": "husholdninger-med-1-barn-status",
+    "title": "Husholdninger med 1 barn status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-1-barn-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 2 barn",
+    "Id": "husholdninger-med-2-barn",
+    "title": "Husholdninger med 2 barn",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdninger-med-2-barn" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 2 barn historisk",
+    "Id": "husholdninger-med-2-barn-historisk",
+    "title": "Husholdninger med 2 barn historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-2-barn-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 2 barn status",
+    "Id": "husholdninger-med-2-barn-status",
+    "title": "Husholdninger med 2 barn status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-2-barn-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 3 eller flere barn",
+    "Id": "husholdninger-med-3-barn",
+    "title": "Husholdninger med 3+ barn",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdninger-med-3-barn" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 3 eller flere barn historisk",
+    "Id": "husholdninger-med-3-barn-historisk",
+    "title": "Husholdninger med 3+ barn historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-3-barn-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "barn i husholdninger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel husholdninger med 3 eller flere barn status",
+    "Id": "husholdninger-med-3-barn-status",
+    "title": "Husholdninger med 3+ barn status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/husholdninger-med-3-barn-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "husholdninger", "husholdningstype", "barn"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Inneholder statistikk over antall privathusholdninger etter type og etter antall barn i husholdningen. Til samme husholdning regnes personer som er bosatt i samme privatbolig",
+    "Id": "husholdninger-med-barn",
+    "title": "Husholdninger med barn",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/husholdninger-med-barn" } }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Husholdningstyper",
+    "Id": "husholdningstyper",
+    "title": "Husholdningstyper",
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/husholdningstyper" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Husholdningstyper historisk",
+    "Id": "husholdningstyper-historisk",
+    "title": "Husholdningstyper historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdningstyper-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["flytting"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Husholdningstyper status",
+    "Id": "husholdningstyper-status",
+    "title": "Husholdningstyper status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/husholdningstyper-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "videreg\u00e5ende skole", "fullf\u00f8ring"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antallet personer 21-29 \u00e5r som ikke har fullf\u00f8rt videreg\u00e5ende skole etter 5 \u00e5r.",
+    "Id": "ikke-fullfort-vgs",
+    "title": "Ikke fullf\u00f8rt vgs",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/ikke-fullfort-vgs" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "lav utdanning", "vgs"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Ikke fullf\u00f8rt vgs historisk",
+    "Id": "ikke-fullfort-vgs-historisk",
+    "title": "Ikke fullf\u00f8rt vgs historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/ikke-fullfort-vgs-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "lav utdanning", "vgs"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Ikke fullf\u00f8rt vgs status",
+    "Id": "ikke-fullfort-vgs-status",
+    "title": "Ikke fullf\u00f8rt vgs status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/ikke-fullfort-vgs-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "alder", "innvandrere"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Befolkningen etter alder og innvandrings-kategori",
+    "Id": "innvandrer-befolkningen-0-15-ar",
+    "title": "Innvandrer-befolkningen 0-15 \u00e5r",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": {
+      "self": { "href": "/datasets/innvandrer-befolkningen-0-15-ar" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning alle historisk",
+    "Id": "innvandring-befolkning-alle-historisk",
+    "title": "Innvandring befolkning alle historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-alle-historisk" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning alle status",
+    "Id": "innvandring-befolkning-alle-status",
+    "title": "Innvandring befolkning alle status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-alle-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning historisk",
+    "Id": "innvandring-befolkning-historisk",
+    "title": "Innvandring befolkning historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-historisk" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning kort historisk",
+    "Id": "innvandring-befolkning-kort-historisk",
+    "title": "Innvandring befolkning kort historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-kort-historisk" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning kort status",
+    "Id": "innvandring-befolkning-kort-status",
+    "title": "Innvandring befolkning kort status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-kort-status" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning lang historisk",
+    "Id": "innvandring-befolkning-lang-historisk",
+    "title": "Innvandring befolkning lang historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-lang-historisk" }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning lang status",
+    "Id": "innvandring-befolkning-lang-status",
+    "title": "Innvandring befolkning lang status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-lang-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning status",
+    "Id": "innvandring-befolkning-status",
+    "title": "Innvandring befolkning status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/innvandring-befolkning-status" } }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning to foreldre historisk",
+    "Id": "innvandring-befolkning-to-foreldre-historisk",
+    "title": "Innvandring befolkning to foreldre historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/innvandring-befolkning-to-foreldre-historisk"
+      }
+    }
+  },
+  {
+    "theme": ["Befolkning og samfunn"],
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "accrualPeriodicity": "annual",
+    "Type": "Dataset",
+    "publisher": "POS (Plan og strategi)",
+    "confidentiality": "yellow",
+    "keywords": [],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring befolkning to foreldre status",
+    "Id": "innvandring-befolkning-to-foreldre-status",
+    "title": "Innvandring befolkning to foreldre status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-befolkning-to-foreldre-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 en innvandrerforelder historisk",
+    "Id": "innvandring-under-16-en-innvandrerforelder-historisk",
+    "title": "Innvandring under 16 en innvandrerforelder historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/innvandring-under-16-en-innvandrerforelder-historisk"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 en innvandrerforelder status",
+    "Id": "innvandring-under-16-en-innvandrerforelder-status",
+    "title": "Innvandring under 16 en innvandrerforelder status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/innvandring-under-16-en-innvandrerforelder-status"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 innvandrer historisk",
+    "Id": "innvandring-under-16-innvandrer-historisk",
+    "title": "Innvandring under 16 innvandrer historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-under-16-innvandrer-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 innvandrer status",
+    "Id": "innvandring-under-16-innvandrer-status",
+    "title": "Innvandring under 16 innvandrer status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/innvandring-under-16-innvandrer-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 to innvandrerforeldre historisk",
+    "Id": "innvandring-under-16-to-innvandrerforeldre-historisk",
+    "title": "Innvandring under 16 to innvandrerforeldre historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/innvandring-under-16-to-innvandrerforeldre-historisk"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Innvandring under 16 to innvandrerforeldre status",
+    "Id": "innvandring-under-16-to-innvandrerforeldre-status",
+    "title": "Innvandring under 16 to innvandrerforeldre status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/innvandring-under-16-to-innvandrerforeldre-status"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["boliger", "kommunale"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antallet kommunale boliger.",
+    "Id": "kommunale-boliger",
+    "title": "Kommunale boliger",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/kommunale-boliger" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "boliger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Kommunale boliger av boligmassen i alt historisk",
+    "Id": "kommunale-boliger-av-boligmassen-i-alt-historisk",
+    "title": "Kommunale boliger av boligmassen i alt historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/kommunale-boliger-av-boligmassen-i-alt-historisk"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "boliger"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Kommunale boliger av boligmassen i alt status",
+    "Id": "kommunale-boliger-av-boligmassen-i-alt-status",
+    "title": "Kommunale boliger av boligmassen i alt status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/kommunale-boliger-av-boligmassen-i-alt-status"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["landbakgrunn", "innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Landbakgrunn innvandingsgrupper historisk",
+    "Id": "landbakgrunn-innvandringsgrupper-historisk",
+    "title": "Landbakgrunn innvandringsgrupper historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/landbakgrunn-innvandringsgrupper-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["landbakgrunn", "innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Landbakgrunn innvandingsgrupper historisk",
+    "Id": "landbakgrunn-innvandringsgrupper-historisk-U6G9d",
+    "title": "Landbakgrunn innvandringsgrupper historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/landbakgrunn-innvandringsgrupper-historisk-U6G9d"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["landbakgrunn", "innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Landbakgrunn innvandingsgrupper status",
+    "Id": "landbakgrunn-innvandringsgrupper-status",
+    "title": "Landbakgrunn innvandringsgrupper status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/landbakgrunn-innvandringsgrupper-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["landbakgrunn", "innvandring"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Landbakgrunn innvandingsgrupper status",
+    "Id": "landbakgrunn-innvandringsgrupper-status-bsU2Q",
+    "title": "Landbakgrunn innvandringsgrupper status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/landbakgrunn-innvandringsgrupper-status-bsU2Q"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "land", "innvandrere"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antall personer etter enkelt land med mer 25 personer og Sentrum, Marka og URA utelatt",
+    "Id": "landbakgrunn-storste-innvandringsgrupper",
+    "title": "Landbakgrunn st\u00f8rste innvandringsgrupper",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": {
+      "self": { "href": "/datasets/landbakgrunn-storste-innvandringsgrupper" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "utdanningsniv\u00e5"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antall fordelt etter utdanningsniv\u00e5, 30-59 \u00e5r.\nImputert utdanning f.o.m. 2015",
+    "Id": "lav-utdanning",
+    "title": "Lav utdanning",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/lav-utdanning" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["sysselsetting", "arbeidsledighet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levekar ikke-sysselsatte historisk",
+    "Id": "levekar-ikke-sysselsatte-historisk",
+    "title": "Levek\u00e5r ikke-sysselsatte historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/levekar-ikke-sysselsatte-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["sysselsetting", "arbeidsledighet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levekar ikke-sysselsatte status",
+    "Id": "levekar-ikke-sysselsatte-status",
+    "title": "Levek\u00e5r ikke-sysselsatte status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/levekar-ikke-sysselsatte-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r Ikke-vestlige kortbodd historisk",
+    "Id": "levekar-innvandrere-ikke-vestlige-kort-historisk",
+    "title": "Levekar innvandrere ikke-vestlige kort historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/levekar-innvandrere-ikke-vestlige-kort-historisk"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r Ikke-vestlige kortbodd status",
+    "Id": "levekar-innvandrere-ikke-vestlige-kort-status",
+    "title": "Levekar innvandrere ikke-vestlige kort status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": {
+        "href": "/datasets/levekar-innvandrere-ikke-vestlige-kort-status"
+      }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "utdanning"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Tidsserie for antall og andel mennesker med lav utdanning",
+    "Id": "levekar-lav-utdanning-historisk",
+    "title": "Levek\u00e5r lav utdanning historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/levekar-lav-utdanning-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "utdanning"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Antall og andel mennesker med lav utdanning 2018",
+    "Id": "levekar-lav-utdanning-status",
+    "title": "Levek\u00e5r lav utdanning status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-lav-utdanning-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "funksjonsevne"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levekar redusert funksjonsevne historisk",
+    "Id": "levekar-redusert-funksjonsevne-historisk",
+    "title": "Levekar redusert funksjonsevne historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/levekar-redusert-funksjonsevne-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "funksjonsevne"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levekar redusert funksjonsevne status",
+    "Id": "levekar-redusert-funksjonsevne-status",
+    "title": "Levekar redusert funksjonsevne status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/levekar-redusert-funksjonsevne-status" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r totalt status",
+    "Id": "levekar-totalt-status",
+    "title": "Levek\u00e5r totalt status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-totalt-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r trangbodde historisk",
+    "Id": "levekar-trangbodde-historisk",
+    "title": "Levek\u00e5r trangbodde historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-trangbodde-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Levek\u00e5r trangbodde status",
+    "Id": "levekar-trangbodde-status",
+    "title": "Levek\u00e5r trangbodde status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-trangbodde-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "lav utdanning", "vgs"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Andel av befolkningen som ikke har fullf\u00f8rt vgs (historisk)",
+    "Id": "levekar-vgs-historisk",
+    "title": "Levekar vgs historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-vgs-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["levek\u00e5r", "lav utdanning", "vgs"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Andel av befolkningen som ikke har fullf\u00f8rt vgs (siste \u00e5r)",
+    "Id": "levekar-vgs-status",
+    "title": "Levekar vgs status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/levekar-vgs-status" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["monitoring", "test"],
+    "objective": "To hold test events for dataplatform-monitoring",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "97471858",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Test dataset for monitoring",
+    "Id": "monitoring-test",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Monitoring test",
+    "_links": { "self": { "href": "/datasets/monitoring-test" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["monitoring", "test"],
+    "objective": "To hold test events for dataplatform-monitoring",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "97471858",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Test dataset for monitoring",
+    "Id": "monitoring-test-KJkqT",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Monitoring test",
+    "_links": { "self": { "href": "/datasets/monitoring-test-KJkqT" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["monitoring", "test"],
+    "objective": "To hold test events for dataplatform-monitoring",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "97471858",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Test dataset for monitoring",
+    "Id": "monitoring-test-NeRR9",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Monitoring test",
+    "_links": { "self": { "href": "/datasets/monitoring-test-NeRR9" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["monitoring", "test"],
+    "objective": "To hold test events for dataplatform-monitoring",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "97471858",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Test dataset for monitoring",
+    "Id": "monitoring-test-vea22",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Monitoring test",
+    "_links": { "self": { "href": "/datasets/monitoring-test-vea22" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["folkemengde"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Status p\u00e5 folkemengde og utvikling",
+    "Id": "nokkeltall-om-befolkningen",
+    "title": "N\u00f8kkeltall om befolkningen",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/nokkeltall-om-befolkningen" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["probe", "test"],
+    "objective": "To probe the system",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "1234567",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Dataset for the probe",
+    "Id": "probe",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Probe",
+    "_links": { "self": { "href": "/datasets/probe" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["Probe", "test"],
+    "objective": "Probing the system",
+    "contactPoint": {
+      "name": "Kristoffer Strekerud",
+      "phone": "12345678",
+      "email": "kristoffer.strekerud@byr.oslo.kommune.no"
+    },
+    "description": "Dataset for probe",
+    "Id": "probe-prod",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Probe Prod",
+    "_links": { "self": { "href": "/datasets/probe-prod" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "redusert funksjonsevne"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Personer i alderen 16 til 66 \u00e5r med redusert funksjonsevne",
+    "Id": "redusert-funksjonsevne",
+    "title": "Redusert funksjonsevne",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/redusert-funksjonsevne" } }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjoner",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjoner",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid",
+    "_links": {
+      "self": { "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid" }
+    }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjon Gr\u00f8nmo",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjon Gr\u00f8nmo",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid-gronmo",
+    "Type": "Dataset",
+    "parent_id": "reg-gjenbruksstasjon-estimert-kotid",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid Gr\u00f8nmo",
+    "_links": {
+      "self": { "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid-gronmo" }
+    }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjon Haraldrud",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjon Haraldrud",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid-haraldrud",
+    "Type": "Dataset",
+    "parent_id": "reg-gjenbruksstasjon-estimert-kotid",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid Haraldrud",
+    "_links": {
+      "self": {
+        "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid-haraldrud"
+      }
+    }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjon Haraldrud hageavfall",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjon Haraldrud hageavfall",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid-haraldrudhage",
+    "Type": "Dataset",
+    "parent_id": "reg-gjenbruksstasjon-estimert-kotid",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid HaraldrudHage",
+    "_links": {
+      "self": {
+        "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid-haraldrudhage"
+      }
+    }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjon Ryen",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjon Ryen",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid-ryen",
+    "Type": "Dataset",
+    "parent_id": "reg-gjenbruksstasjon-estimert-kotid",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid Ryen",
+    "_links": {
+      "self": { "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid-ryen" }
+    }
+  },
+  {
+    "publisher": "REG (Renovasjons- og gjenvinningsetaten)",
+    "confidentiality": "green",
+    "keywords": [],
+    "objective": "Estimere k\u00f8tid p\u00e5 gjennbruksstasjon Smestad",
+    "contactPoint": {
+      "name": "Jorgen Simensen Almankaas",
+      "phone": "41762743",
+      "email": "jorgen.almankaas@ren.oslo.kommune.no"
+    },
+    "description": "Bilder for estimert k\u00f8tid p\u00e5 gjennbruksstasjon Smestad",
+    "Id": "reg-gjenbruksstasjon-estimert-kotid-smestad",
+    "Type": "Dataset",
+    "parent_id": "reg-gjenbruksstasjon-estimert-kotid",
+    "accessRights": "public",
+    "title": "REG gjenbruksstasjon estimert k\u00f8tid Smestad",
+    "_links": {
+      "self": {
+        "href": "/datasets/reg-gjenbruksstasjon-estimert-kotid-smestad"
+      }
+    }
+  },
+  {
+    "publisher": "",
+    "confidentiality": "green",
+    "keywords": ["reg", "vekt", "renovasjon", "danvekt", "telenor"],
+    "objective": "",
+    "contactPoint": {
+      "name": "Jan Haakon Ellefsen-Killerud",
+      "email": "jan.haakon.killerud@ren.oslo.kommune.no"
+    },
+    "description": "",
+    "Id": "reg-vektsystem-danvekt",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "REG vektsystem Danvekt",
+    "_links": { "self": { "href": "/datasets/reg-vektsystem-danvekt" } }
+  },
+  {
+    "processing_stage": "processed",
+    "publisher": "REN",
+    "visibilityLevel": "private",
+    "confidentiality": "yellow",
+    "keywords": ["renovasjon", "ren", "\u00f8konomi", "agresso"],
+    "objective": "Datagrunnlag for m\u00e5nedsrapport hos REN",
+    "contactPoint": {
+      "name": "Contact Name",
+      "phone": "999555111",
+      "email": "contact.name@example.org"
+    },
+    "description": "Agresso data for alle koststeder og 5-sifrete arter/konto",
+    "Id": "ren-manedsrapport-historisk",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "REN m\u00e5nedsrapport historisk",
+    "_links": { "self": { "href": "/datasets/ren-manedsrapport-historisk" } }
+  },
+  {
+    "processing_stage": "processed",
+    "publisher": "REN",
+    "visibilityLevel": "private",
+    "confidentiality": "yellow",
+    "keywords": ["renovasjon", "ren", "\u00f8konomi", "agresso"],
+    "objective": "Datagrunnlag for m\u00e5nedsrapport hos REN",
+    "contactPoint": {
+      "name": "Contact Name",
+      "phone": "999555111",
+      "email": "contact.name@example.org"
+    },
+    "description": "Agresso data for alle koststeder og 5-sifrete arter/konto",
+    "Id": "ren-manedsrapport-status",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "REN m\u00e5nedsrapport status",
+    "_links": { "self": { "href": "/datasets/ren-manedsrapport-status" } }
+  },
+  {
+    "theme": ["Natur, klima og milj\u00f8", "Avfallsh\u00e5ndtering"],
+    "processing_stage": "raw",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "accrualPeriodicity": "continuous",
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["botek", "evolution", "ren"],
+    "objective": "Datagrunnlag for renovasjonsdashboard.",
+    "description": "Status for renovasjonsbiler fra botek/evolution.",
+    "Id": "renovasjonsbiler-status",
+    "title": "Renovasjonsbiler status",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/renovasjonsbiler-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "sysselsatte"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Antall sysselsatte, 30-59 \u00e5r, med bosted i Oslo. Bydel og delbydeler.",
+    "Id": "sysselsatte",
+    "title": "Sysselsatte",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/sysselsatte" } }
+  },
+  {
+    "processing_stage": "processed",
+    "publisher": "Origo Dataplattform",
+    "confidentiality": "green",
+    "keywords": ["test"],
+    "objective": "The objective for this dataset is to test data uploading in frontend",
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "description": "My dataset description",
+    "Id": "test-av-frontend-opplasting",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "test av frontend opplasting",
+    "_links": { "self": { "href": "/datasets/test-av-frontend-opplasting" } }
+  },
+  {
+    "processing_stage": "raw",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Origo Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["event"],
+    "objective": "Testing under utvikling",
+    "description": "Datasett for testing under utvikling av event str\u00f8m pipelines",
+    "Id": "test-event",
+    "title": "test event",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/test-event" } }
+  },
+  {
+    "processing_stage": "raw",
+    "publisher": "Origo",
+    "visibilityLevel": "private",
+    "confidentiality": "green",
+    "keywords": ["event"],
+    "objective": "Teste oppretting av eventstr\u00f8mmer",
+    "contactPoint": {
+      "name": "\u00d8yvind Nygard",
+      "phone": "999555111",
+      "email": "oyvind.nygard@byr.oslo.kommune.no"
+    },
+    "description": "Testdatasett for oppretting av eventstr\u00f8mmer",
+    "Id": "test-event-stream",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "test event stream",
+    "_links": { "self": { "href": "/datasets/test-event-stream" } }
+  },
+  {
+    "publisher": "Origo",
+    "confidentiality": "green",
+    "keywords": ["keyword", "event"],
+    "objective": "Teste eventstr\u00f8m abonnement",
+    "contactPoint": {
+      "name": "Petter H. Juliussen",
+      "phone": "41234567",
+      "email": "petter.juliussen@byr.oslo.kommune.no"
+    },
+    "description": "Testdatasett for event-data-subscription",
+    "Id": "test-event-subscription",
+    "Type": "Dataset",
+    "accessRights": "public",
+    "title": "Test event subscription",
+    "_links": { "self": { "href": "/datasets/test-event-subscription" } }
+  },
+  {
+    "theme": ["Natur, klima og milj\u00f8", "Avfallsh\u00e5ndtering"],
+    "processing_stage": "raw",
+    "visibilityLevel": "private",
+    "contactPoint": {
+      "name": "Dataplattform",
+      "email": "dataplattform@oslo.kommune.no"
+    },
+    "accrualPeriodicity": "continuous",
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["botek", "evolution", "ren", "test"],
+    "objective": "Datagrunnlag for evolution-bincollection.",
+    "description": "evolution-bincollection",
+    "Id": "tomminger-av-avfallsbeholdere",
+    "title": "T\u00f8mminger av avfallsbeholdere",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/tomminger-av-avfallsbeholdere" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "public",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Byr\u00e5dsavdeling for finans",
+      "email": "oslostatistikken@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Byr\u00e5dsavdeling for finans",
+    "confidentiality": "green",
+    "keywords": ["befolkning", "trangbodde"],
+    "objective": "Datasettet brukes som grunnlag for \u00e5 generere innhold i Bydelsfakta.",
+    "description": "Andel Personer, eksklusive studenter, som bor trangt",
+    "Id": "trangbodde",
+    "title": "Trangbodde",
+    "parent_id": null,
+    "accessRights": "public",
+    "_links": { "self": { "href": "/datasets/trangbodde" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet 0.5-0.9 historisk",
+    "Id": "trangboddhet-0-5-0-9-historisk",
+    "title": "Trangboddhet 0.5-0.9 historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-0-5-0-9-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet 0.5-0.9 status",
+    "Id": "trangboddhet-0-5-0-9-status",
+    "title": "Trangboddhet 0.5-0.9 status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-0-5-0-9-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet 1.0-1.9 historisk",
+    "Id": "trangboddhet-1-0-1-9-historisk",
+    "title": "Trangboddhet 1.0-1.9 historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-1-0-1-9-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet 1.0-1.9 status",
+    "Id": "trangboddhet-1-0-1-9-status",
+    "title": "Trangboddhet 1.0-1.9 status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-1-0-1-9-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet alle historisk",
+    "Id": "trangboddhet-alle-historisk",
+    "title": "Trangboddhet alle historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-alle-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet alle status",
+    "Id": "trangboddhet-alle-status",
+    "title": "Trangboddhet alle status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-alle-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet over 2 historisk",
+    "Id": "trangboddhet-over-2-historisk",
+    "title": "Trangboddhet over 2 historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-over-2-historisk" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet over 2 status",
+    "Id": "trangboddhet-over-2-status",
+    "title": "Trangboddhet over 2 status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-over-2-status" } }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet under 0.5 historisk",
+    "Id": "trangboddhet-under-0-5-historisk",
+    "title": "Trangboddhet under 0.5 historisk",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": {
+      "self": { "href": "/datasets/trangboddhet-under-0-5-historisk" }
+    }
+  },
+  {
+    "theme": "Befolkning og samfunn",
+    "processing_stage": "processed",
+    "visibilityLevel": "private",
+    "frequency": null,
+    "contactPoint": {
+      "name": "Bydelsfakta",
+      "email": "bydelsfakta@byr.oslo.kommune.no"
+    },
+    "Type": "Dataset",
+    "publisher": "Origo",
+    "confidentiality": "yellow",
+    "keywords": ["husholdninger", "trangboddhet"],
+    "objective": "Datagrunnlag for visualisering i faktaark",
+    "description": "Trangboddhet under 0.5 status",
+    "Id": "trangboddhet-under-0-5-status",
+    "title": "Trangboddhet under 0.5 status",
+    "parent_id": "bydelsfakta-grafdata",
+    "accessRights": "restricted",
+    "_links": { "self": { "href": "/datasets/trangboddhet-under-0-5-status" } }
+  },
+  {
+    "processing_stage": "processed",
+    "publisher": "REN",
+    "visibilityLevel": "private",
+    "confidentiality": "yellow",
+    "keywords": ["renovasjon", "ren", "\u00f8konomi", "agresso"],
+    "objective": "Datagrunnlag for BI analyser hos REN",
+    "contactPoint": {
+      "name": "Contact Name",
+      "phone": "999555111",
+      "email": "contact.name@example.org"
+    },
+    "description": "Reparasjon og vedlikehold av biler i Innsamlingsavdeling REN",
+    "Id": "vedlikeholdsutgifter-renovasjonsbiler",
+    "Type": "Dataset",
+    "accessRights": "restricted",
+    "title": "Vedlikeholdsutgifter renovasjonsbiler",
+    "_links": {
+      "self": { "href": "/datasets/vedlikeholdsutgifter-renovasjonsbiler" }
+    }
+  }
+]
