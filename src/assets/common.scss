@@ -22,6 +22,39 @@ body {
   line-height: 1.5;
   font-weight: 300;
 }
+// Text
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.3em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
 
 // The following two classes controls content width and gutters/margins.
 // The first is wider than the second, and is used to align content with the header-content width
@@ -45,6 +78,5 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$page-padding} * 2);
 }
