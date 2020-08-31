@@ -9,7 +9,6 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "colorette": "^1.2.1",
     "core-js": "^3.6.5",
     "serialize-javascript": "^4.0.0",
     "vue": "^2.6.12",
@@ -67,17 +66,17 @@
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
   },
-  "description": "## Project setup ``` npm install ```",
-  "main": ".eslintrc.js",
+  "description": "## Frontend-project for dataplatform",
+  "main": "",
   "directories": {
     "test": "tests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oslokommune/dataplatform-frontend.git"
+    "url": "https://github.com/oslokommune/dataplatform-frontend.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Oslo Origo",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/oslokommune/dataplatform-frontend/issues"
   },
