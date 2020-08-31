@@ -29,9 +29,6 @@ export default {
 header {
   text-align: center;
 }
-main {
-  text-align: center;
-}
 a {
   color: $font-color;
 }
