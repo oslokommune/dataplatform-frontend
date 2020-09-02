@@ -16,10 +16,7 @@
           <p>2020-01-01 12:01:01</p>
         </template>
         <template v-slot:status>
-          <div class="status-icons">
-            <IconFailedCircle />
-            <span> Feil </span>
-          </div>
+          <DatasetStatus />
         </template>
         <template v-slot:expandedContent>
           <dl class="details">
@@ -42,18 +39,16 @@
 </template>
 
 <script>
-import IconFailedCircle from '@/components/icons/IconFailedCircle'
-//import IconCheckCircle from '@/components/icons/IconCheckCircle'
 import IconOpenInNew from '@/components/icons/IconOpenInNew'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
+import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
 export default {
   name: 'DatasetList',
   components: {
     ExpandableRow,
-    IconFailedCircle,
-    //IconCheckCircle,
     IconOpenInNew,
+    DatasetStatus,
   },
   data() {
     return {
@@ -76,19 +71,9 @@ export default {
 .intro p {
   font-size: $font-size-ingress;
 }
-.IconCheckCircle {
-  color: $green;
-  margin-right: 5px;
-}
-.IconFailedCircle {
-  color: $red;
-  margin-right: 5px;
-}
+
 .details dt {
   margin-top: 20px;
   font-weight: 600;
-}
-.status-icons {
-  display: inline-flex;
 }
 </style>
