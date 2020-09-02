@@ -31,34 +31,18 @@ export default {
   },
   computed: {
     /**
-     * There are 3 ways that shows that the processing is finished:
+     * There are 2 ways that shows that the processing is finished:
      * If status = FINISHED
-     * If there is a date_end
      * If the status is FAILED
      */
     finished() {
-      if (this.runStatus) {
-        return true
-      }
-      if (this.datasetstatus.date_end !== 'N/A') {
-        return true
-      }
-      if (this.failed) {
-        return true
-      }
-      return false
+      return this.runStatus || this.failed
     },
     failed() {
-      if (this.datasetstatus.status === 'FAILED') {
-        return true
-      }
-      return false
+      return this.datasetstatus.status === 'FAILED'
     },
     runStatus() {
-      if (this.datasetstatus.run_status === 'FINISHED') {
-        return true
-      }
-      return false
+      return this.datasetstatus.run_status === 'FINISHED'
     },
   },
 }
