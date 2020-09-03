@@ -1,5 +1,12 @@
 <template>
   <div>
+    <button @click="login">
+      Logg inn
+    </button>
+    Is authenticated: {{ isAuthenticated }}
+    <div v-if="isAuthenticated">
+      You are: {{ user.name }}
+    </div>
     <div class="intro">
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier</p>
@@ -43,6 +50,8 @@ import IconOpenInNew from '@/components/icons/IconOpenInNew'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
+import { mapGetters, mapActions, mapState } from 'vuex'
+
 export default {
   name: 'DatasetList',
   components: {
@@ -56,13 +65,26 @@ export default {
       owner: 'Deichman',
     }
   },
+  mounted() {
+    this.refreshUser();
+  },
   computed: {
+    ...mapState('auth', ['user']),
+    ...mapGetters('auth', ['isAuthenticated']),
     filteredDatasets() {
       return this.datasets.filter((dataset) => {
         return dataset.publisher === this.owner
       })
     },
   },
+  methods: {
+    ...mapActions('auth', ['refreshUser']),
+    login() {
+      const encodedRedirectURL = encodeURIComponent('http://localhost:8080');
+      const url = `http://localhost:4554/login?redirect=${encodedRedirectURL}`;
+      window.location = url;
+    },
+  }
 }
 </script>
 
