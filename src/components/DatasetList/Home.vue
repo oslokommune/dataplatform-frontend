@@ -3,6 +3,12 @@
 --->
 <template>
   <div>
+
+    <!-- TOOO: Remove, this is only a proof of concept. -->
+    <button @click="login">Logg inn</button>
+    Is authenticated: {{ isAuthenticated }}
+    <div v-if="isAuthenticated">You are: {{ user.name }}</div>
+
     <div class="intro">
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier</p>
@@ -42,10 +48,12 @@
 </template>
 
 <script>
+import { mapGetters, mapActions, mapState } from 'vuex'
 import IconOpenInNew from '@/components/icons/IconOpenInNew'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
+
 export default {
   name: 'DatasetList',
   components: {
@@ -59,11 +67,24 @@ export default {
       owner: 'Deichman',
     }
   },
+  mounted() {
+    this.refreshUser()
+  },
   computed: {
+    ...mapState('auth', ['user']),
+    ...mapGetters('auth', ['isAuthenticated']),
     filteredDatasets() {
       return this.datasets.filter((dataset) => {
         return dataset.publisher === this.owner
       })
+    },
+  },
+  methods: {
+    ...mapActions('auth', ['refreshUser']),
+    login() {
+      // TODO: Replace hard coded URLs.
+      const encodedRedirectURL = encodeURIComponent('http://localhost:8080')
+      window.location = `http://localhost:4554/login?redirect=${encodedRedirectURL}`
     },
   },
 }
