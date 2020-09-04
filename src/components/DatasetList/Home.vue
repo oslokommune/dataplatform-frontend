@@ -3,7 +3,6 @@
 --->
 <template>
   <div>
-
     <!-- TOOO: Remove, this is only a proof of concept. -->
     <button @click="login">Logg inn</button>
     Is authenticated: {{ isAuthenticated }}
@@ -37,7 +36,7 @@
           </dl>
         </template>
         <template v-slot:edit>
-          <a href="#"> <IconOpenInNew /></a>
+          <a href="#"> <IconDotDotHorizontal /></a>
         </template>
       </ExpandableRow>
     </div>
@@ -49,7 +48,7 @@
 
 <script>
 import { mapGetters, mapActions, mapState } from 'vuex'
-import IconOpenInNew from '@/components/icons/IconOpenInNew'
+import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
@@ -58,7 +57,7 @@ export default {
   name: 'DatasetList',
   components: {
     ExpandableRow,
-    IconOpenInNew,
+    IconDotDotHorizontal,
     DatasetStatus,
   },
   data() {
