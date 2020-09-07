@@ -17,30 +17,16 @@
         <thead>
           <th>Tittel</th>
           <th>Sist oppdatert</th>
-          <th>Verktøy</th>
           <th>Status</th>
+          <th>Verktøy</th>
           <th>Detaljer</th>
         </thead>
-        <tbody
-          class="dataset-list"
-          v-for="datasetobject in filteredDatasets"
-          :key="datasetobject.id"
-        >
-          <tr class="row">
-            <td>{{ datasetobject.title }}</td>
-            <td>2020-01-01 12:01:01</td>
-            <td><IconDotDotHorizontal /></td>
-            <td><DatasetStatus /></td>
-            <td>
-              <div class="stateAndExpandCollapse">
-                <ExpandCollapseIcon
-                  :expanded="expanded"
-                  @click.native.stop="expanded = !expanded"
-                />
-              </div>
-            </td>
-            <div v-if="expanded" class="expandedContent">hei</div>
-          </tr>
+        <tbody class="dataset-list">
+          <TableRow
+            v-for="datasetobject in filteredDatasets"
+            :key="datasetobject.id"
+            :datasetobject="datasetobject"
+          />
         </tbody>
       </table>
     </div>
@@ -52,17 +38,14 @@
 
 <script>
 import { mapGetters, mapActions, mapState } from 'vuex'
-import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
-import ExpandCollapseIcon from '@/components/icons/ExpandCollapseIcon'
-import DatasetStatus from '@/components/DatasetList/DatasetStatus'
+
+import TableRow from '@/components/DatasetList/TableRow'
 import datasets from '@/assets/mock/dataset.json'
 
 export default {
   name: 'DatasetList',
   components: {
-    IconDotDotHorizontal,
-    DatasetStatus,
-    ExpandCollapseIcon,
+    TableRow,
   },
   data() {
     return {
@@ -103,15 +86,6 @@ export default {
 
 .intro p {
   font-size: $font-size-ingress;
-}
-tr {
-  font-size: 18px;
-  border-top: $separator-border;
-  overflow-y: auto;
-
-  &:last-of-type {
-    border-bottom: $separator-border;
-  }
 }
 
 .details dt {
