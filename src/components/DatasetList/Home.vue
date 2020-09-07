@@ -12,33 +12,52 @@
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier</p>
     </div>
-    <div class="dataset-list" v-if="datasets.length > 0">
-      <ExpandableRow
-        v-for="datasetobject in filteredDatasets"
-        :key="datasetobject.id"
-      >
-        <template v-slot:title>
-          <p>{{ datasetobject.title }}</p>
-        </template>
-        <template v-slot:date>
-          <p>2020-01-01 12:01:01</p>
-        </template>
-        <template v-slot:status>
-          <DatasetStatus />
-        </template>
-        <template v-slot:expandedContent>
-          <dl class="details">
-            <dt>Status id:</dt>
-            <dd>12345</dd>
 
-            <dt>Feilmelding:</dt>
-            <dd>Feil struktur</dd>
-          </dl>
-        </template>
-        <template v-slot:edit>
-          <a href="#"> <IconDotDotHorizontal /></a>
-        </template>
-      </ExpandableRow>
+    <div class="dataset-list" v-if="datasets.length > 0">
+      <table>
+        <tr>
+          <th>Tittel</th>
+          <th>Sist oppdatert</th>
+          <th>Status</th>
+          <th>Verktøy</th>
+          <th>Detaljer</th>
+        </tr>
+        <tr>
+          <ExpandableRow
+            v-for="datasetobject in filteredDatasets"
+            :key="datasetobject.id"
+          >
+            <template v-slot:title>
+              <td>
+                <p>{{ datasetobject.title }}</p>
+              </td>
+            </template>
+
+            <template v-slot:date>
+              <td>
+                <p>2020-01-01 12:01:01</p>
+              </td>
+            </template>
+            <template v-slot:status>
+              <td>
+                <DatasetStatus />
+              </td>
+            </template>
+            <template v-slot:expandedContent>
+              <dl class="details">
+                <dt>Status id:</dt>
+                <dd>12345</dd>
+
+                <dt>Feilmelding:</dt>
+                <dd>Feil struktur</dd>
+              </dl>
+            </template>
+            <template v-slot:edit>
+              <a href="#"> <IconDotDotHorizontal /></a>
+            </template>
+          </ExpandableRow>
+        </tr>
+      </table>
     </div>
     <div v-else>
       <p>Du har ingen datasett</p>

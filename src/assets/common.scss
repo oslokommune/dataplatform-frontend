@@ -55,6 +55,57 @@ h3 {
 h4 {
   font-size: 1.25em;
 }
+// Table-style
+table {
+  width: 100%;
+}
+
+tr {
+  padding: 0 3em;
+  border-bottom: solid 1px $grey-200;
+}
+
+td {
+  max-width: 0;
+
+  &:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+th {
+  letter-spacing: 0.46px;
+  font-weight: bold;
+}
+
+td,
+th {
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+  text-align: left;
+  font-weight: normal;
+  padding: 1em 0;
+
+  &:last-child {
+    text-align: right;
+    padding-right: $focus-border-width;
+  }
+
+  // All columns in between
+  &:not(:first-child):not(:last-child) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  // Hide everything but the title on mobile
+  @media (max-width: $mobile-screen) {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
 
 // The following two classes controls content width and gutters/margins.
 // The first is wider than the second, and is used to align content with the header-content width
