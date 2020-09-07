@@ -80,10 +80,13 @@ export default {
   },
   methods: {
     ...mapActions('auth', ['refreshUser']),
+    /*
+     * TODO: Replace this with `login` from the authentication store
+     * once the environment variables are in place.
+     */
     login() {
-      // TODO: Replace hard coded URLs.
       const encodedRedirectURL = encodeURIComponent('http://localhost:8080')
-      window.location = `http://localhost:4554/login?redirect=${encodedRedirectURL}`
+      window.location = `https://gatekeeper.k8s-test.oslo.kommune.no/login?redirect=${encodedRedirectURL}`
     },
   },
 }
