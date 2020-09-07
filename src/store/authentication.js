@@ -42,7 +42,7 @@ export const actions = {
     try {
       const { data } = await axios.request({
         // TODO: Fetch this from an environment variable.
-        baseURL: 'http://localhost:4554',
+        baseURL: 'https://gatekeeper.k8s-test.oslo.kommune.no',
         url: '/userinfo',
         method: 'get',
         withCredentials: true,
@@ -56,7 +56,7 @@ export const actions = {
             if (process.server) {
               // TODO: Fetch this from an environment variable
               console.error(
-                `Couldn't reach Gatekeeper on url http://localhost:4554`
+                `Couldn't reach Gatekeeper on url https://gatekeeper.k8s-test.oslo.kommune.no`
               )
             }
             throw error
