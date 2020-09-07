@@ -12,51 +12,36 @@
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier</p>
     </div>
-
-    <div class="dataset-list" v-if="datasets.length > 0">
+    <div v-if="datasets">
       <table>
-        <tr>
+        <thead>
           <th>Tittel</th>
           <th>Sist oppdatert</th>
-          <th>Status</th>
           <th>Verktøy</th>
+          <th>Status</th>
           <th>Detaljer</th>
-        </tr>
-        <tr>
-          <ExpandableRow
-            v-for="datasetobject in filteredDatasets"
-            :key="datasetobject.id"
-          >
-            <template v-slot:title>
-              <td>
-                <p>{{ datasetobject.title }}</p>
-              </td>
-            </template>
-
-            <template v-slot:date>
-              <td>
-                <p>2020-01-01 12:01:01</p>
-              </td>
-            </template>
-            <template v-slot:status>
-              <td>
-                <DatasetStatus />
-              </td>
-            </template>
-            <template v-slot:expandedContent>
-              <dl class="details">
-                <dt>Status id:</dt>
-                <dd>12345</dd>
-
-                <dt>Feilmelding:</dt>
-                <dd>Feil struktur</dd>
-              </dl>
-            </template>
-            <template v-slot:edit>
-              <a href="#"> <IconDotDotHorizontal /></a>
-            </template>
-          </ExpandableRow>
-        </tr>
+        </thead>
+        <tbody
+          class="dataset-list"
+          v-for="datasetobject in filteredDatasets"
+          :key="datasetobject.id"
+        >
+          <tr class="row">
+            <td>{{ datasetobject.title }}</td>
+            <td>2020-01-01 12:01:01</td>
+            <td><IconDotDotHorizontal /></td>
+            <td><DatasetStatus /></td>
+            <td>
+              <div class="stateAndExpandCollapse">
+                <ExpandCollapseIcon
+                  :expanded="expanded"
+                  @click.native.stop="expanded = !expanded"
+                />
+              </div>
+            </td>
+            <div v-if="expanded" class="expandedContent">hei</div>
+          </tr>
+        </tbody>
       </table>
     </div>
     <div v-else>
@@ -68,21 +53,22 @@
 <script>
 import { mapGetters, mapActions, mapState } from 'vuex'
 import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
-import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
+import ExpandCollapseIcon from '@/components/icons/ExpandCollapseIcon'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
 
 export default {
   name: 'DatasetList',
   components: {
-    ExpandableRow,
     IconDotDotHorizontal,
     DatasetStatus,
+    ExpandCollapseIcon,
   },
   data() {
     return {
       datasets,
       owner: 'Deichman',
+      expanded: false,
     }
   },
   mounted() {
@@ -113,8 +99,19 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/variables';
+@import '@/assets/common';
+
 .intro p {
   font-size: $font-size-ingress;
+}
+tr {
+  font-size: 18px;
+  border-top: $separator-border;
+  overflow-y: auto;
+
+  &:last-of-type {
+    border-bottom: $separator-border;
+  }
 }
 
 .details dt {

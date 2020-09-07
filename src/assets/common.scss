@@ -62,12 +62,10 @@ table {
 
 tr {
   padding: 0 3em;
-  border-bottom: solid 1px $grey-200;
+  overflow-y: auto;
 }
 
 td {
-  max-width: 0;
-
   &:last-child {
     padding-top: 0;
     padding-bottom: 0;
@@ -82,7 +80,7 @@ th {
 td,
 th {
   white-space: nowrap;
-
+  overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
   font-weight: normal;
