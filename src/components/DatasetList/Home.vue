@@ -10,6 +10,23 @@
       <p>Her finner du informasjon om de datasettene du eier</p>
     </div>
     <div class="dataset-list" v-if="datasets.length > 0">
+      <ExpandableRow :header="true">
+        <template v-slot:title>
+          <p>Tittel</p>
+        </template>
+        <template v-slot:date>
+          <p>Sist oppdatert</p>
+        </template>
+        <template v-slot:status>
+          <p>Status</p>
+        </template>
+        <template v-slot:edit>
+          <p>Verktøy</p>
+        </template>
+        <template v-slot:details>
+          <p>Detaljer</p>
+        </template>
+      </ExpandableRow>
       <ExpandableRow
         v-for="datasetobject in filteredDatasets"
         :key="datasetobject.id"
