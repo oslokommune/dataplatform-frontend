@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <!-- TOOO: Remove, this is only a proof of concept. -->
     <button @click="login">Logg inn</button>
     Is authenticated: {{ isAuthenticated }}
