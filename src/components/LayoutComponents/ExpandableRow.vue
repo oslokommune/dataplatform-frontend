@@ -4,7 +4,7 @@ It as three slots for injecting content: title and state, which is always shown,
 shows only when the row is expanded.
 -->
 <template>
-  <div class="expandable-row">
+  <div class="expandable-row" :class="{ header: header }">
     <div class="expand-collapse">
       <div class="field">
         <slot name="title" />
@@ -19,9 +19,11 @@ shows only when the row is expanded.
         <div class="field">
           <slot name="edit" />
         </div>
+        <div class="field" v-if="header"><slot name="details" /></div>
         <ExpandCollapseIcon
           :expanded="expanded"
           @click.native.stop="expanded = !expanded"
+          v-if="!header"
         />
       </div>
     </div>
@@ -40,6 +42,12 @@ export default {
   components: {
     ExpandCollapseIcon,
   },
+  props: {
+    header: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
       expanded: false,
@@ -57,14 +65,21 @@ export default {
   padding-right: 0.8em;
   border-top: $separator-border;
   text-align: left;
-  margin-top: 3em;
+  margin-top: 1em;
   overflow-y: auto;
 
   &:last-of-type {
     border-bottom: $separator-border;
   }
+  &:nth-child(2) {
+    border-top: 2px solid black;
+  }
 }
+.header {
+  border-top: 0;
 
+  font-weight: bold;
+}
 .expand-collapse {
   display: flex;
   width: 100%;
@@ -79,8 +94,6 @@ export default {
   }
 
   .field {
-    padding-right: 1em;
-
     > a {
       display: block;
     }

@@ -10,6 +10,23 @@
       <p>Her finner du informasjon om de datasettene du eier</p>
     </div>
     <div class="dataset-list" v-if="datasets.length > 0">
+      <ExpandableRow :header="true">
+        <template v-slot:title>
+          <p>Tittel</p>
+        </template>
+        <template v-slot:date>
+          <p>Sist oppdatert</p>
+        </template>
+        <template v-slot:status>
+          <p>Status</p>
+        </template>
+        <template v-slot:edit>
+          <p>Verktøy</p>
+        </template>
+        <template v-slot:details>
+          <p>Detaljer</p>
+        </template>
+      </ExpandableRow>
       <ExpandableRow
         v-for="datasetobject in filteredDatasets"
         :key="datasetobject.id"
@@ -33,7 +50,7 @@
           </dl>
         </template>
         <template v-slot:edit>
-          <a href="#"> <IconOpenInNew /></a>
+          <a href="#"> <IconDotDotHorizontal /></a>
         </template>
       </ExpandableRow>
     </div>
@@ -45,7 +62,7 @@
 
 <script>
 import { mapGetters, mapActions, mapState } from 'vuex'
-import IconOpenInNew from '@/components/icons/IconOpenInNew'
+import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
@@ -54,7 +71,7 @@ export default {
   name: 'DatasetList',
   components: {
     ExpandableRow,
-    IconOpenInNew,
+    IconDotDotHorizontal,
     DatasetStatus,
   },
   data() {
@@ -94,9 +111,14 @@ export default {
 .intro p {
   font-size: $font-size-ingress;
 }
-
+.dataset-list {
+  margin-top: 4em;
+}
 .details dt {
   margin-top: 20px;
   font-weight: 600;
+}
+.IconDotDotHorizontal {
+  margin-right: 1em;
 }
 </style>
