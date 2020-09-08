@@ -51,7 +51,6 @@ export default {
     return {
       datasets,
       owner: 'Deichman',
-      expanded: false,
     }
   },
   mounted() {
@@ -86,10 +85,5 @@ export default {
 
 .intro p {
   font-size: $font-size-ingress;
-}
-
-.details dt {
-  margin-top: 20px;
-  font-weight: 600;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="table-row">
     <tr>
       <td>{{ datasetobject.title }}</td>
       <td>2020-01-01 12:01:01</td>
@@ -14,7 +14,15 @@
         </div>
       </td>
     </tr>
-    <div v-if="expanded" class="expandedContent">hei</div>
+    <div v-if="expanded" class="expandedContent">
+      <dl class="details">
+        <dt>Status id:</dt>
+        <dd>12345</dd>
+
+        <dt>Feilmelding:</dt>
+        <dd>Feil struktur</dd>
+      </dl>
+    </div>
   </div>
 </template>
 <script>
@@ -43,14 +51,23 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/variables';
 @import '@/assets/common';
+.table-row {
+  display: contents;
+}
+.IconDotDotHorizontal {
+  margin-left: 1em;
+}
 
-tr {
+.Icon td {
   font-size: 18px;
   border-top: $separator-border;
+  text-align: left;
+  margin-top: 3em;
   overflow-y: auto;
+}
 
-  &:last-of-type {
-    border-bottom: $separator-border;
-  }
+.details dt {
+  margin-top: 20px;
+  font-weight: 600;
 }
 </style>
