@@ -58,6 +58,7 @@ h4 {
 // Table-style
 table {
   width: 100%;
+  margin-top: 40px;
 }
 
 tr {
@@ -81,7 +82,7 @@ td,
 th {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+
   text-align: left;
   font-weight: normal;
   padding: 1em 0;
