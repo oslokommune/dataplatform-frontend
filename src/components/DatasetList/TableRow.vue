@@ -58,7 +58,7 @@ export default {
   margin-left: 1em;
 }
 
-.Icon td {
+td {
   font-size: 18px;
   border-top: $separator-border;
   text-align: left;
