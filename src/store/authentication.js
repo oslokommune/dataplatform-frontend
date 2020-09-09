@@ -5,10 +5,7 @@
  * authenticated user.
  */
 
-/*
- * TODO: Make axios available on $this.axios so we don't have to
- * import it everywhere.
- */
+import env from '@/utils/env'
 import axios from 'axios'
 
 export const state = () => ({
@@ -41,8 +38,7 @@ export const actions = {
 
     try {
       const { data } = await axios.request({
-        // TODO: Fetch this from an environment variable.
-        baseURL: 'https://gatekeeper.k8s-test.oslo.kommune.no',
+        baseURL: env.VUE_APP_GATEKEEPER_BASE_URL,
         url: '/userinfo',
         method: 'get',
         withCredentials: true,
@@ -51,20 +47,10 @@ export const actions = {
       commit('setUser', data)
     } catch (error) {
       if (error.response) {
-        switch (error.response.status) {
-          case 400:
-            if (process.server) {
-              // TODO: Fetch this from an environment variable
-              console.error(
-                `Couldn't reach Gatekeeper on url https://gatekeeper.k8s-test.oslo.kommune.no`
-              )
-            }
-            throw error
-          case 401:
-            return null // Ignore 401, it's expected due to many users not being logged in
-          default:
-            throw error
+        if (401 === error.response.status) {
+          return null // Ignore 401, it's expected due to many users not being logged in
         }
+        throw error
       }
     }
 

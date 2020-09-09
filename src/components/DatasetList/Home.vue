@@ -66,6 +66,7 @@ import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
+import env from '@/utils/env'
 
 export default {
   name: 'DatasetList',
@@ -99,8 +100,9 @@ export default {
      * once the environment variables are in place.
      */
     login() {
-      const encodedRedirectURL = encodeURIComponent('http://localhost:8080')
-      window.location = `https://gatekeeper.k8s-test.oslo.kommune.no/login?redirect=${encodedRedirectURL}`
+      const encodedRedirectURL = encodeURIComponent(env.VUE_APP_BASE_URL)
+      const gateKeeperBaseUrl = env.VUE_APP_GATEKEEPER_BASE_URL
+      window.location = `${gateKeeperBaseUrl}/login?redirect=${encodedRedirectURL}`
     },
   },
 }
@@ -108,6 +110,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/variables';
+
 .intro p {
   font-size: $font-size-ingress;
 }
