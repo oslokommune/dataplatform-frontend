@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- TOOO: Remove, this is only a proof of concept. -->
-    <button @click="login">Logg inn</button>
+    <button @click="login()">Logg inn</button>
+    <button @click="logout()">Logg ut</button>
     Is authenticated: {{ isAuthenticated }}
     <div v-if="isAuthenticated">You are: {{ user.name }}</div>
 
@@ -66,7 +67,6 @@ import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
-import env from '@/utils/env'
 
 export default {
   name: 'DatasetList',
@@ -94,16 +94,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions('auth', ['refreshUser']),
-    /*
-     * TODO: Replace this with `login` from the authentication store
-     * once the environment variables are in place.
-     */
-    login() {
-      const encodedRedirectURL = encodeURIComponent(env.VUE_APP_BASE_URL)
-      const gateKeeperBaseUrl = env.VUE_APP_GATEKEEPER_BASE_URL
-      window.location = `${gateKeeperBaseUrl}/login?redirect=${encodedRedirectURL}`
-    },
+    ...mapActions('auth', ['refreshUser', 'login', 'logout']),
   },
 }
 </script>

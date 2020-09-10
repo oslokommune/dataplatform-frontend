@@ -7,6 +7,7 @@
 
 import env from '@/utils/env'
 import axios from 'axios'
+import router from '@/router'
 
 export const state = () => ({
   user: null,
@@ -16,15 +17,13 @@ export const getters = {
   isAuthenticated(state) {
     return state.user !== null
   },
-  loggedInUser(state) {
-    return state.user
-  },
 }
 
 export const mutations = {
   resetUser(state) {
     state.user = null
   },
+
   setUser(state, user) {
     state.user = user
   },
@@ -56,42 +55,25 @@ export const actions = {
 
     return getters['loggedInUser']
   },
-  async login(context, redirectTo) {
+
+  login(context, redirectTo) {
     if (!redirectTo) {
-      redirectTo = this.$env.BASE_URL + this.$router.history.current.fullPath
+      console.log(router.history.current.fullPath)
+      redirectTo = env.VUE_APP_BASE_URL + router.history.current.fullPath
     }
 
     const encodedRedirectUrl = encodeURIComponent(redirectTo)
-    const url =
-      this.$env.GATEKEEPER_URL + `/login?redirect=${encodedRedirectUrl}`
-
-    await handleRedirect(this.app.context.redirect, url)
+    window.location.href =
+      env.VUE_APP_GATEKEEPER_BASE_URL + `/login?redirect=${encodedRedirectUrl}`
   },
-  async logout({ commit }) {
-    await axios.request({
+
+  logout({ commit }) {
+    axios.request({
       method: 'post',
-      url: this.$env.GATEKEEPER_URL + '/logout',
+      url: env.VUE_APP_GATEKEEPER_BASE_URL + '/logout',
       withCredentials: true,
     })
 
-    commit('resetUser', null)
-
-    await handleRedirect(this.app.context.redirect, this.app.$env.BASE_URL)
+    commit('resetUser')
   },
-}
-
-async function handleRedirect(redirectFn, target) {
-  try {
-    redirectFn(target)
-  } catch (error) {
-    if (error.message !== 'ERR_REDIRECT') throw error
-    /*
-     * If client side, the redirect function throws an error. In this event, we have to
-     * stall until the actual window.location.replace happens.
-     * This promise will in 99.9% of all cases never resolve due to redirection occurring
-     */
-    await new Promise((resolve) => {
-      window.setTimeout(() => resolve(), 60000)
-    })
-  }
 }
