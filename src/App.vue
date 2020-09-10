@@ -11,6 +11,7 @@
 </template>
 <script>
 import Footer from './components/BaseComponents/Footer'
+import 'normalize.css'
 export default {
   components: {
     Footer,
