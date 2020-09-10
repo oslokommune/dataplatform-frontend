@@ -11,11 +11,12 @@
 
 <script>
 export default {
-  components: {},
+  name: 'DetailsSidebar',
 }
 </script>
+
 <style lang="scss" scoped>
-@import 'assets/variables';
+@import '@/assets/variables';
 
 .side-bar {
   margin-top: 2em;

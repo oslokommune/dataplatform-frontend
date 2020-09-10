@@ -12,15 +12,10 @@ const routes = [
     component: Home,
   },
   {
-    path: '/datasetdetails',
-    name: 'Datasetdetails',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: '/dataset/:id',
+    name: 'Datasett',
     component: () =>
-      import(
-        /* webpackChunkName: "about" */ '../modules/DatasetDetails/DatasetDetails.vue'
-      ),
+      import(/* webpackChunkName: "dataset" */ '../modules/Dataset/index.vue'),
   },
   {
     path: '/styles',
