@@ -1,5 +1,5 @@
 <template>
-  <aside class="sideBar">
+  <aside class="side-bar">
     <div class="links">
       <slot name="links" />
     </div>
@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 @import 'assets/variables';
 
-.sideBar {
+.side-bar {
   margin-top: 2em;
   padding-top: 110px;
   width: 215px;
