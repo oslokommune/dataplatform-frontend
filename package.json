@@ -79,7 +79,7 @@
     "url": "https://github.com/oslokommune/dataplatform-frontend.git"
   },
   "author": "Oslo Origo",
-  "license": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/oslokommune/dataplatform-frontend/issues"
   },
