@@ -100,8 +100,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/variables';
-
 .intro p {
   font-size: $font-size-ingress;
 }
