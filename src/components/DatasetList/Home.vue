@@ -64,7 +64,7 @@
 <script>
 import { mapGetters, mapActions, mapState } from 'vuex'
 import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
-import ExpandableRow from '@/components/LayoutComponents/ExpandableRow'
+import ExpandableRow from '@/components/ExpandableRow'
 import DatasetStatus from '@/components/DatasetList/DatasetStatus'
 import datasets from '@/assets/mock/dataset.json'
 
