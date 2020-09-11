@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import IconOsloLogo from '../icons/IconOsloLogo'
+import IconOsloLogo from '../components/icons/IconOsloLogo'
 
 export default {
   components: {
