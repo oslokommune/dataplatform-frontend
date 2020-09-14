@@ -20,9 +20,9 @@
         </template>
 
         <template v-slot:buttons>
-          <button type="button">Knapp en</button>
-          <button type="button">Knapp to</button>
-          <button type="button">Knapp tre</button>
+          <Button>Knapp en</Button>
+          <Button variant="secondary">Knapp to</Button>
+          <Button disabled>Knapp tre</Button>
         </template>
       </DetailsSidebar>
 
@@ -97,6 +97,7 @@ import DetailsSidebar from '@/components/Layout/DetailsSidebar'
 import IconLockSolidLocked from '@/components/icons/IconLockSolidLocked'
 import IconLockSolidUnlocked from '@/components/icons/IconLockSolidUnlocked'
 import IconSpinner from '@/components/icons/IconSpinner'
+import Button from '@/components/buttons/Button'
 import env from '@/utils/env'
 
 import Editions from './Editions'
@@ -104,6 +105,7 @@ import Editions from './Editions'
 export default {
   name: 'Dataset',
   components: {
+    Button,
     DetailsSidebar,
     Editions,
     IconLockSolidLocked,
@@ -151,8 +153,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/variables';
-
 .loading {
   align-items: center;
   display: flex;
