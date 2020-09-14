@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import format from 'date-fns/format'
 
 import env from '@/utils/env'
@@ -68,7 +67,7 @@ export default {
       if (this.datasetId) {
         this.loading = true
 
-        const { data: editions } = await axios.request({
+        const { data: editions } = await this.$axios.request({
           baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
           url: `/metadata/datasets/${this.datasetId}/versions/1/editions`,
           method: 'get',
