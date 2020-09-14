@@ -53,11 +53,11 @@ export default {
   display: inline-flex;
 }
 .IconCheckCircle {
-  color: $green;
+  color: $ok-green;
   margin-right: 5px;
 }
 .IconFailedCircle {
-  color: $red;
+  color: $ok-red;
   margin-right: 5px;
 }
 </style>

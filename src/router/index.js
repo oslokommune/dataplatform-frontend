@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/DatasetList/Home.vue'
+import Home from '../modules/DatasetList/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -18,7 +18,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "about" */ '../components/DatasetDetails/DatasetDetails.vue'
+        /* webpackChunkName: "about" */ '../modules/DatasetDetails/DatasetDetails.vue'
       ),
   },
 ]

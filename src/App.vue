@@ -10,7 +10,7 @@
   </div>
 </template>
 <script>
-import Footer from './components/BaseComponents/Footer'
+import Footer from './app/Footer'
 import 'normalize.css'
 export default {
   components: {
