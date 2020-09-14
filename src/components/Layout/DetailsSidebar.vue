@@ -11,12 +11,11 @@
 
 <script>
 export default {
-  components: {},
+  name: 'DetailsSidebar',
 }
 </script>
-<style lang="scss" scoped>
-@import 'assets/variables';
 
+<style lang="scss" scoped>
 .side-bar {
   margin-top: 2em;
   padding-top: 110px;
@@ -32,6 +31,8 @@ export default {
 
       text-decoration: none;
 
+      &:focus,
+      &:hover,
       &.active {
         background-color: $background-secondary;
         font-weight: bold;

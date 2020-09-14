@@ -1,6 +1,6 @@
 {
   "name": "dataset-frontend",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "core-js": "^3.6.5",
+    "date-fns": "^2.16.1",
     "normalize.css": "^8.0.1",
     "serialize-javascript": "^4.0.0",
     "vue": "^2.6.12",

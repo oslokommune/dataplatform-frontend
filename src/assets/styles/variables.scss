@@ -54,9 +54,21 @@ $font-family: 'Oslo Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto
   'Helvetica Neue', Arial, sans-serif;
 $font-family-code: 'Source Code Pro', monospace;
 
-$font-size-ingress: 1.56rem;
-$font-size-bread: 1.25rem;
-$font-size-large: 18px;
-$font-size-small: 18px;
-$font-size-x-small: 16px;
-$font-size-xx-small: 14px;
+$font-size-xxl: 3.25rem;
+$font-size-xl: 2rem;
+$font-size-lg: 1.5rem;
+$font-size-md: 1.25rem;
+$font-size-sm: 0.9rem;
+$font-size-xs: 0.75rem;
+
+$font-size-ingress: $font-size-lg;
+$font-size-bread: $font-size-sm;
+
+// Spacing
+$space: 1rem;
+$space-xxl: $space * 5;
+$space-xl: $space * 3;
+$space-lg: $space * 1.5;
+$space-md: $space;
+$space-sm: $space / 2;
+$space-xs: $space / 4;
