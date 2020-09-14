@@ -16,8 +16,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/variables';
-
 .side-bar {
   margin-top: 2em;
   padding-top: 110px;
@@ -33,6 +31,8 @@ export default {
 
       text-decoration: none;
 
+      &:focus,
+      &:hover,
       &.active {
         background-color: $background-secondary;
         font-weight: bold;
