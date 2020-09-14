@@ -48,7 +48,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '@/assets/variables';
 .dataset-status {
   display: inline-flex;
 }

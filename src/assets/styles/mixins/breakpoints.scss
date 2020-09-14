@@ -1,0 +1,47 @@
+// Borrowed from bootstrap
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// To a minimum, we design for mobile and desktop
+
+@mixin sm {
+  @media screen and (max-width: $sm - 1) {
+    @content
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: $sm) and (max-width: $lg - 1) {
+    @content
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: $lg) {
+    @content
+  }
+}
+
+.sm {
+  @media screen and (min-width: $sm) {
+    display: none;
+  }
+}
+
+.md {
+  @media screen and (max-width: $sm - 1), screen and (min-width: $lg) {
+    display: none;
+  }
+}
+
+.lg {
+  @media screen and (max-width: $lg - 1) {
+    display: none;
+  }
+}
+

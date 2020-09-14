@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../modules/DatasetList/Home.vue'
+import StyleOverview from '../components/StyleOverview.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
       import(
         /* webpackChunkName: "about" */ '../modules/DatasetDetails/DatasetDetails.vue'
       ),
+  },
+  {
+    path: '/styles',
+    name: 'Styles',
+    component: StyleOverview,
   },
 ]
 

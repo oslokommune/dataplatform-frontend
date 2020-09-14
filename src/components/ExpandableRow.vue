@@ -57,8 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/variables';
-
 .expandable-row {
   font-size: 18px;
   padding: 0.3em 0;

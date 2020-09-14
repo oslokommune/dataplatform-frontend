@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/variables';
-
 footer {
   border-top: $separator-border;
   padding-top: 1em;
