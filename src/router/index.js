@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../modules/DatasetList/Home.vue'
+import DatasetList from '../modules/DatasetList/index.vue'
 import StyleOverview from '../components/StyleOverview.vue'
 
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'DatasetList',
+    component: DatasetList,
   },
   {
     path: '/dataset/:id',

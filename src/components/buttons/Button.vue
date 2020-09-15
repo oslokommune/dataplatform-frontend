@@ -1,10 +1,11 @@
 <template>
   <button
     :aria-role="ariaRole"
-    class="button"
     :class="[disabled ? 'disabled' : variant]"
     :disabled="disabled"
     :type="type"
+    class="button"
+    v-on="$listeners"
   >
     <slot></slot>
   </button>
