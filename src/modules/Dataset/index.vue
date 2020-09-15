@@ -1,9 +1,6 @@
 <template>
   <div class="dataset-module">
-    <div v-if="loading" class="loading">
-      <span class="loading__icon"><IconSpinner /></span>
-      <span class="loading__text">Henter datasett</span>
-    </div>
+    <Loader v-if="loading" center>Henter datasett</Loader>
 
     <div v-if="error">
       <div v-if="error === 'notFound'">Kunne ikke finne datasettet.</div>
@@ -93,11 +90,11 @@
 <script>
 import axios from 'axios'
 
+import Button from '@/components/buttons/Button'
 import DetailsSidebar from '@/components/Layout/DetailsSidebar'
 import IconLockSolidLocked from '@/components/icons/IconLockSolidLocked'
 import IconLockSolidUnlocked from '@/components/icons/IconLockSolidUnlocked'
-import IconSpinner from '@/components/icons/IconSpinner'
-import Button from '@/components/buttons/Button'
+import Loader from '@/components/Loader'
 import env from '@/utils/env'
 
 import Editions from './Editions'
@@ -106,11 +103,11 @@ export default {
   name: 'Dataset',
   components: {
     Button,
+    Loader,
     DetailsSidebar,
     Editions,
     IconLockSolidLocked,
     IconLockSolidUnlocked,
-    IconSpinner,
   },
   data() {
     return {
@@ -153,18 +150,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.loading {
-  align-items: center;
-  display: flex;
-  font-size: $font-size-md;
-  justify-content: center;
-
-  &__icon {
-    line-height: 0;
-    margin-right: 0.5rem;
-  }
-}
-
 .dataset {
   display: flex;
 }
