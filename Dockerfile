@@ -16,7 +16,9 @@ WORKDIR /build
 COPY --from=dep-stage /build/node_modules ./node_modules
 
 COPY .eslintrc.js .
+COPY .prettierrc.js .
 COPY babel.config.js .
+COPY vue.config.js .
 COPY package*.json ./
 
 COPY public/ ./public
