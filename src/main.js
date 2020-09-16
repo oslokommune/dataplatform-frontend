@@ -3,14 +3,14 @@ import Vuex from 'vuex'
 
 import App from './App.vue'
 import router from './router'
-import AxiosPlugin from './utils/axios.js'
-
+import axiosVuePlugin from './plugins/axios.vue.js'
+import axiosVuexPlugin from './plugins/axios.vuex.js'
 import * as authenticationStore from './store/authentication'
 import * as datasetListStore from './modules/DatasetList/store'
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
-Vue.use(AxiosPlugin)
+Vue.use(axiosVuePlugin)
 
 const store = new Vuex.Store({
   modules: {
@@ -23,6 +23,7 @@ const store = new Vuex.Store({
       ...datasetListStore,
     },
   },
+  plugins: [axiosVuexPlugin],
 })
 
 new Vue({

@@ -6,13 +6,7 @@
  */
 
 import env from '@/utils/env'
-import Axios from 'axios'
 import router from '@/router'
-
-const axios = Axios.create({
-  baseURL: env.VUE_APP_GATEKEEPER_BASE_URL,
-  withCredentials: true,
-})
 
 export const state = () => ({
   user: null,
@@ -41,7 +35,7 @@ export const actions = {
     }
 
     try {
-      const { data } = await axios.get('/userinfo')
+      const { data } = await this.$axios.get('/userinfo')
 
       commit('setUser', data)
     } catch (error) {
@@ -68,7 +62,7 @@ export const actions = {
   },
 
   async logout({ commit }) {
-    await axios.post('/logout')
+    await this.$axios.post('/logout')
     commit('resetUser')
   },
 }

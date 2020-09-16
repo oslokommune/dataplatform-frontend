@@ -1,8 +1,7 @@
-import axios from 'axios'
+import Axios from 'axios'
+import env from './env'
 
-// Access axios with this.$axios from all Vue-intances and components
-export default {
-  install: function (Vue) {
-    Object.defineProperty(Vue.prototype, '$axios', { value: axios })
-  },
-}
+export default Axios.create({
+  baseURL: env.VUE_APP_GATEKEEPER_BASE_URL,
+  withCredentials: true,
+})
