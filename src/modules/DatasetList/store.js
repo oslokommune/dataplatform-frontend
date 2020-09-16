@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 import env from '@/utils/env'
 
 const PER_PAGE = 20
@@ -59,11 +57,10 @@ export const actions = {
       commit('setPage', page)
     }
 
-    const { data } = await axios.request({
+    const { data } = await this.$axios.request({
       baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
       url: '/simple-dataset-authorizer/datasets',
       method: 'get',
-      withCredentials: true,
     })
 
     commit('setDatasetIds', data)
@@ -78,12 +75,11 @@ export const actions = {
     const currentPageDatasetIds = state.datasetIds.slice(start, end)
 
     const requests = currentPageDatasetIds.map(({ datasetId }) =>
-      axios
+      this.$axios
         .request({
           baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
           url: `/metadata/datasets/${datasetId}`,
           method: 'get',
-          withCredentials: true,
         })
         .then(({ data }) => data)
         .catch((error) => ({

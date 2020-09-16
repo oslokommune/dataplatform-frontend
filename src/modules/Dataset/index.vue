@@ -134,7 +134,6 @@ export default {
         baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
         url: `/metadata/datasets/${datasetId}`,
         method: 'get',
-        withCredentials: true,
       })
 
       if (dataset) {

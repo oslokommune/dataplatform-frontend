@@ -71,7 +71,6 @@ export default {
           baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
           url: `/metadata/datasets/${this.datasetId}/versions/1/editions`,
           method: 'get',
-          withCredentials: true,
         })
 
         this.loading = false
