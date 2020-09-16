@@ -85,7 +85,7 @@ export default {
           if (i - j === 2) {
             pagesWithDots.push(j + 1)
           } else if (i - j !== 1) {
-            pagesWithDots.push('...')
+            pagesWithDots.push('…')
           }
         }
         pagesWithDots.push(i)
