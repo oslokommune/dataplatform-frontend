@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VueGtag from 'vue-gtag'
 
+import env from './utils/env.js'
 import App from './App.vue'
 import router from './router'
 import axiosVuePlugin from './plugins/axios.vue.js'
@@ -11,6 +13,16 @@ import * as datasetListStore from './modules/DatasetList/store'
 Vue.config.productionTip = false
 Vue.use(Vuex)
 Vue.use(axiosVuePlugin)
+
+Vue.use(
+  VueGtag,
+  {
+    config: { id: env.VUE_APP_UA_TRACKING_ID },
+    enabled: !!env.VUE_APP_UA_TRACKING_ID,
+    pageTrackerSkipSamePath: false, // Tracks pages when only their query params change, e.g. pagination
+  },
+  router
+)
 
 const store = new Vuex.Store({
   modules: {

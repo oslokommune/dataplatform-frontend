@@ -60,3 +60,7 @@ Set variables like so: `docker run -e VUE_APP_BASE_URL=datasets.no -e OTHER_VARI
 ## Vulnerabilities
 
 See the [vulnerability overview](docs/vulnerabilities.md).
+
+## Analytics
+
+See the [analytics overview](docs/analytics.md).
