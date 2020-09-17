@@ -13,6 +13,10 @@
 
     <Loader v-if="loading">Henter datasett</Loader>
     <template v-else>
+      <HttpError v-if="errorCode" :error="errorCode">
+        Kunne ikke hente datasett
+      </HttpError>
+
       <div
         class="dataset-list"
         v-if="!datasets !== null && datasets.length > 0"
@@ -37,7 +41,16 @@
 
         <ExpandableRow v-for="dataset in datasets" :key="dataset.id">
           <template v-slot:title>
-            <p>{{ dataset.title || dataset.datasetId }}</p>
+            <span v-if="dataset.errorCode" class="error-text">
+              {{ dataset.title || dataset.id }}
+              <br />
+              NB! Datasettet er slettet
+            </span>
+            <router-link
+              v-else
+              :to="{ name: 'Datasett', params: { id: dataset.id } }"
+              >{{ dataset.title || dataset.id }}</router-link
+            >
           </template>
           <template v-slot:date>
             <!-- TODO Replace static value -->
@@ -61,7 +74,7 @@
           </template>
         </ExpandableRow>
       </div>
-      <div v-else>
+      <div v-else-if="!errorCode">
         <p>Du har ingen datasett.</p>
       </div>
 
@@ -80,6 +93,7 @@ import { mapGetters, mapActions, mapState } from 'vuex'
 
 import DatasetStatus from '@/modules/DatasetList/DatasetStatus'
 import ExpandableRow from '@/components/ExpandableRow'
+import HttpError from '@/components/Alert/HttpError'
 import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import Loader from '@/components/Loader'
 
@@ -90,6 +104,7 @@ export default {
   components: {
     DatasetStatus,
     ExpandableRow,
+    HttpError,
     IconDotDotHorizontal,
     Loader,
     Pagination,
@@ -114,7 +129,12 @@ export default {
     },
     ...mapState('auth', ['user']),
     ...mapGetters('auth', ['isAuthenticated']),
-    ...mapGetters('datasetList', ['loading', 'datasets', 'pageCount']),
+    ...mapGetters('datasetList', [
+      'errorCode',
+      'loading',
+      'datasets',
+      'pageCount',
+    ]),
   },
   methods: {
     handlePageChange(newPage) {
@@ -139,5 +159,8 @@ export default {
 }
 .IconDotDotHorizontal {
   margin-right: 1em;
+}
+.error-text {
+  color: $ok-state-danger;
 }
 </style>
