@@ -2,10 +2,9 @@
   <div class="dataset-module">
     <Loader v-if="loading" center>Henter datasett</Loader>
 
-    <div v-if="error">
-      <div v-if="error === 'notFound'">Kunne ikke finne datasettet.</div>
-    </div>
-
+    <HttpError v-if="errorCode" :error="errorCode">
+      Kunne ikke hente datasett
+    </HttpError>
     <div v-if="dataset" class="dataset">
       <DetailsSidebar>
         <!-- TODO What should be here? -->
@@ -90,6 +89,7 @@
 <script>
 import Button from '@/components/buttons/Button'
 import DetailsSidebar from '@/components/Layout/DetailsSidebar'
+import HttpError from '@/components/Alert/HttpError'
 import IconLockSolidLocked from '@/components/icons/IconLockSolidLocked'
 import IconLockSolidUnlocked from '@/components/icons/IconLockSolidUnlocked'
 import Loader from '@/components/Loader'
@@ -100,16 +100,17 @@ export default {
   name: 'Dataset',
   components: {
     Button,
-    Loader,
     DetailsSidebar,
     Editions,
+    HttpError,
     IconLockSolidLocked,
     IconLockSolidUnlocked,
+    Loader,
   },
   data() {
     return {
       dataset: null,
-      error: null,
+      errorCode: null,
       loading: false,
     }
   },
@@ -122,18 +123,22 @@ export default {
   methods: {
     async fetchDataset() {
       this.dataset = null
-      this.error = null
+      this.errorCode = null
       this.loading = true
 
       const datasetId = this.$route.params.id
 
-      const { data: dataset } = await this.$axios.get(
-        `/api/dataplatform/metadata/datasets/${datasetId}`
-      )
-      if (dataset) {
-        this.dataset = dataset
-      } else {
-        this.error = 'notFound'
+      try {
+        const { data: dataset } = await this.$axios.get(
+          `/api/dataplatform/metadata/datasets/${datasetId}`
+        )
+        if (dataset) {
+          this.dataset = dataset
+        } else {
+          this.errorCode = 404
+        }
+      } catch (error) {
+        this.errorCode = error?.response?.status || 'noResponse'
       }
 
       this.loading = false
