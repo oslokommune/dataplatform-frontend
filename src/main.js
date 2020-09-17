@@ -3,12 +3,15 @@ import Vuex from 'vuex'
 import VueGtag from 'vue-gtag'
 
 import env from './utils/env.js'
+import errorHandler from './utils/errorHandler.js'
 import App from './App.vue'
 import router from './router'
 import axiosVuePlugin from './plugins/axios.vue.js'
 import axiosVuexPlugin from './plugins/axios.vuex.js'
 import * as authenticationStore from './store/authentication'
 import * as datasetListStore from './modules/DatasetList/store'
+
+errorHandler(Vue, window)
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
