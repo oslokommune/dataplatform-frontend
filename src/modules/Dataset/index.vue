@@ -88,14 +88,11 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 import Button from '@/components/buttons/Button'
 import DetailsSidebar from '@/components/Layout/DetailsSidebar'
 import IconLockSolidLocked from '@/components/icons/IconLockSolidLocked'
 import IconLockSolidUnlocked from '@/components/icons/IconLockSolidUnlocked'
 import Loader from '@/components/Loader'
-import env from '@/utils/env'
 
 import Editions from './Editions'
 
@@ -130,12 +127,9 @@ export default {
 
       const datasetId = this.$route.params.id
 
-      const { data: dataset } = await axios.request({
-        baseURL: env.VUE_APP_GATEKEEPER_BASE_URL + '/api/dataplatform',
-        url: `/metadata/datasets/${datasetId}`,
-        method: 'get',
-      })
-
+      const { data: dataset } = await this.$axios.get(
+        `/api/dataplatform/metadata/datasets/${datasetId}`
+      )
       if (dataset) {
         this.dataset = dataset
       } else {
