@@ -33,6 +33,6 @@ export default {
 .IconExpandLess {
   width: 20px;
   height: 20px;
-  color: $ok-darkblue;
+  color: $ok-blue-dark;
 }
 </style>

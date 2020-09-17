@@ -1,16 +1,24 @@
+// "ok-" = Oslo kommune
+// Some values are copied from the Oslo kommune style guide:
+// https://styleguide.oslo.kommune.no
+
 // Colors
-$ok-lightblue: #b3f5ff;
 $ok-blue: #6fe9ff;
-$ok-darkblue: #2a2859;
-$ok-lightgreen: #c7f6c9;
-$ok-green: #42f8b6;
-$ok-darkgreen: #034b45;
-$ok-darkbeige: #d0bfae;
-$ok-ightbeige: #f8f0dd;
+$ok-blue-light: #b3f5ff;
+$ok-blue-dark: #1f42aa;
+$ok-purple: #8d50b1;
+$ok-purple-light: #e0adff;
+$ok-green: #43f8b6;
+$ok-green-dark: #034b45;
+$ok-green-light: #4e807c;
+$ok-beige: #f8f0dd;
+$ok-beige-dark: #d0bfae;
 $ok-yellow: #f9c66b;
 $ok-red: #ff8274;
+$ok-grey: #f2f2f2;
+$ok-grey-light: #b3f5ff;
+$ok-black: #2c2c2c;
 
-$darkred: #af0000;
 $grey: #f2f2f2;
 $grey-50: #f7f7f7;
 $grey-100: #e1e1e6;
@@ -25,9 +33,21 @@ $grey-900: #0e0e1a;
 
 $transparent-grey-1: rgba(0, 0, 0, 0.3);
 
+// Colors: states
+$ok-state-muted-text: #333;
+$ok-state-muted-bg: #e6e6e6;
+$ok-state-info-text: $ok-green-dark;
+$ok-state-info-bg: $ok-grey-light;
+$ok-state-success-text: $ok-green-dark;
+$ok-state-success-bg: $ok-green-light;
+$ok-state-warning-text: $ok-green-dark;
+$ok-state-warning-bg: $ok-yellow;
+$ok-state-danger-text: $ok-green-dark;
+$ok-state-danger-bg: $ok-red;
+
 // Theme
-$font-color: #2c2c2c;
-$background-secondary: #f2f2f2;
+$font-color: $ok-black;
+$background-secondary: $ok-grey;
 $link-color: #0075eb;
 
 $container-width: 1340px;

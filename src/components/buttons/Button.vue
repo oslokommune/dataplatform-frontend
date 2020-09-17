@@ -42,24 +42,24 @@ button {
 }
 
 .primary {
-  background: none $ok-darkblue;
+  background: none $ok-blue-dark;
   border: 0 none;
   color: white;
 
   &:focus,
   &:hover {
-    background-color: lighten($ok-darkblue, 20);
+    background-color: lighten($ok-blue-dark, 20);
   }
 }
 
 .secondary {
   background: none white;
-  border: 2px solid $ok-darkblue;
-  color: $ok-darkblue;
+  border: 2px solid $ok-blue-dark;
+  color: $ok-blue-dark;
 
   &:focus,
   &:hover {
-    border-color: lighten($ok-darkblue, 20);
+    border-color: lighten($ok-blue-dark, 20);
     text-decoration: underline;
   }
 }
