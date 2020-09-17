@@ -68,7 +68,7 @@ export default {
         this.loading = true
 
         const { data: editions } = await this.$axios.request({
-          baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
+          baseURL: env.VUE_APP_GATEKEEPER_BASE_URL + '/api/dataplatform',
           url: `/metadata/datasets/${this.datasetId}/versions/1/editions`,
           method: 'get',
         })

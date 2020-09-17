@@ -58,7 +58,7 @@ export const actions = {
     }
 
     const { data } = await this.$axios.request({
-      baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
+      baseURL: env.VUE_APP_GATEKEEPER_BASE_URL + '/api/dataplatform',
       url: '/simple-dataset-authorizer/datasets',
       method: 'get',
     })
@@ -77,7 +77,7 @@ export const actions = {
     const requests = currentPageDatasetIds.map(({ datasetId }) =>
       this.$axios
         .request({
-          baseURL: env.VUE_APP_API_DATAPLATFORM_BASE_URL,
+          baseURL: env.VUE_APP_GATEKEEPER_BASE_URL + '/api/dataplatform',
           url: `/metadata/datasets/${datasetId}`,
           method: 'get',
         })
