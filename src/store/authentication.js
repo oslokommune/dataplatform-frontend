@@ -6,7 +6,6 @@
  */
 
 import env from '@/utils/env'
-import axios from 'axios'
 import router from '@/router'
 
 export const state = () => ({
@@ -36,12 +35,7 @@ export const actions = {
     }
 
     try {
-      const { data } = await axios.request({
-        baseURL: env.VUE_APP_GATEKEEPER_BASE_URL,
-        url: '/userinfo',
-        method: 'get',
-        withCredentials: true,
-      })
+      const { data } = await this.$axios.get('/userinfo')
 
       commit('setUser', data)
     } catch (error) {
@@ -67,13 +61,8 @@ export const actions = {
       env.VUE_APP_GATEKEEPER_BASE_URL + `/login?redirect=${encodedRedirectUrl}`
   },
 
-  logout({ commit }) {
-    axios.request({
-      method: 'post',
-      url: env.VUE_APP_GATEKEEPER_BASE_URL + '/logout',
-      withCredentials: true,
-    })
-
+  async logout({ commit }) {
+    await this.$axios.post('/logout')
     commit('resetUser')
   },
 }
