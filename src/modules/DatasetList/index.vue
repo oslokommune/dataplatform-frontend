@@ -6,7 +6,7 @@
     Is authenticated: {{ isAuthenticated }}
     <div v-if="isAuthenticated">You are: {{ user.name }}</div>
 
-    <div class="intro">
+    <div class="intro-text">
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier.</p>
     </div>
@@ -127,7 +127,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.intro p {
+.intro {
   font-size: $font-size-ingress;
 }
 .dataset-list {

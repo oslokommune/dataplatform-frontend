@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import DatasetList from '../modules/DatasetList/index.vue'
-import StyleOverview from '../components/StyleOverview.vue'
+
+import DatasetList from '../modules/DatasetList'
 
 Vue.use(VueRouter)
 
@@ -15,12 +15,21 @@ const routes = [
     path: '/dataset/:id',
     name: 'Datasett',
     component: () =>
-      import(/* webpackChunkName: "dataset" */ '../modules/Dataset/index.vue'),
+      import(/* webpackChunkName: "dataset" */ '../modules/Dataset'),
   },
   {
     path: '/styles',
     name: 'Styles',
-    component: StyleOverview,
+    component: () =>
+      import(
+        /* webpackChunkName: "style-overview" */ '../modules/StyleOverview'
+      ),
+  },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: () =>
+      import(/* webpackChunkName: "not-found" */ '../modules/NotFound'),
   },
 ]
 
