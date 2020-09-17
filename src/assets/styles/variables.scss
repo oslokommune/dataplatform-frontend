@@ -34,6 +34,11 @@ $grey-900: #0e0e1a;
 $transparent-grey-1: rgba(0, 0, 0, 0.3);
 
 // Colors: states
+$ok-state-muted: #333;
+$ok-state-info: $ok-blue;
+$ok-state-success: $ok-green-light;
+$ok-state-warning: $ok-yellow;
+$ok-state-danger: $ok-red;
 $ok-state-muted-text: #333;
 $ok-state-muted-bg: #e6e6e6;
 $ok-state-info-text: $ok-green-dark;

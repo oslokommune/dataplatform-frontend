@@ -59,8 +59,7 @@ export default {
 <style lang="scss" scoped>
 .expandable-row {
   font-size: 18px;
-  padding: 0.3em 0;
-  padding-right: 0.8em;
+  padding: 0.8em 0 0.3em;
   border-top: $separator-border;
   text-align: left;
   margin-top: 1em;
@@ -84,7 +83,6 @@ export default {
 
   > * {
     display: flex;
-    align-items: center;
   }
 
   > div {
@@ -92,6 +90,8 @@ export default {
   }
 
   .field {
+    padding-right: 0.8em;
+
     > a {
       display: block;
     }

@@ -1,5 +1,3 @@
-import env from '@/utils/env'
-
 const PER_PAGE = 20
 
 const getPageCount = (state) => {
@@ -11,6 +9,7 @@ export const state = () => ({
   currentPage: 1,
   datasetIds: [],
   datasetsData: [],
+  errorCode: null,
   loading: false,
 })
 
@@ -18,11 +17,14 @@ export const getters = {
   currentPage(state) {
     return state.currentPage
   },
-  loading(state) {
-    return state.loading
-  },
   datasets(state) {
     return state.datasetsData
+  },
+  errorCode(state) {
+    return state.errorCode
+  },
+  loading(state) {
+    return state.loading
   },
   pageCount(state) {
     return getPageCount(state)
@@ -30,8 +32,11 @@ export const getters = {
 }
 
 export const mutations = {
-  setLoading(state, loading) {
-    state.loading = loading
+  nextPage(state) {
+    state.currentPage = state.currentPage - 1
+  },
+  prevPage(state) {
+    state.currentPage = state.currentPage + 1
   },
   setDatasetIds(state, datasetIds) {
     state.datasetIds = datasetIds
@@ -39,14 +44,14 @@ export const mutations = {
   setDatasetsData(state, datasetsData) {
     state.datasetsData = datasetsData
   },
+  setErrorCode(state, errorCode) {
+    state.errorCode = errorCode
+  },
+  setLoading(state, loading) {
+    state.loading = loading
+  },
   setPage(state, page) {
     state.currentPage = page
-  },
-  nextPage(state) {
-    state.currentPage = state.currentPage - 1
-  },
-  prevPage(state) {
-    state.currentPage = state.currentPage + 1
   },
 }
 
@@ -57,15 +62,19 @@ export const actions = {
       commit('setPage', page)
     }
 
-    const { data } = await this.$axios.request({
-      baseURL: env.VUE_APP_GATEKEEPER_BASE_URL + '/api/dataplatform',
-      url: '/simple-dataset-authorizer/datasets',
-      method: 'get',
-    })
+    try {
+      const { data } = await this.$axios.get(
+        '/api/dataplatform/simple-dataset-authorizer/datasets'
+      )
 
-    commit('setDatasetIds', data)
+      const datasetIds = Array.isArray(data) ? data : []
+      commit('setDatasetIds', datasetIds)
 
-    dispatch('fetchDatasetsData')
+      dispatch('fetchDatasetsData')
+    } catch (error) {
+      commit('setErrorCode', error?.response?.status || 'noResponse')
+      commit('setLoading', false)
+    }
   },
   async fetchDatasetsData({ commit, state }) {
     commit('setLoading', true)
@@ -77,10 +86,13 @@ export const actions = {
     const requests = currentPageDatasetIds.map(({ datasetId }) =>
       this.$axios
         .get(`/api/dataplatform/metadata/datasets/${datasetId}`)
-        .then(({ data }) => data)
+        .then(({ data }) => ({
+          id: datasetId,
+          ...data,
+        }))
         .catch((error) => ({
-          datasetId,
-          requestError: error,
+          id: datasetId,
+          errorCode: error?.response?.status || 'noResponse',
         }))
     )
     const responses = await Promise.all(requests)
