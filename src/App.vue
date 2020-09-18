@@ -16,6 +16,12 @@ export default {
   components: {
     Footer,
   },
+
+  mixins: [auth],
+
+  mounted() {
+    this.refreshUser()
+  },
 }
 </script>
 <style lang="scss">
