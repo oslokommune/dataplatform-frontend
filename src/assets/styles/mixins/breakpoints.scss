@@ -27,6 +27,18 @@ $xxl: 1400px;
   }
 }
 
+@mixin hideOnSmallerThan($pixels) {
+  @media (max-width: $pixels) {
+    display: none;
+  }
+}
+
+@mixin hideOnLargerThan($pixels) {
+  @media (min-width: $pixels) {
+    display: none;
+  }
+}
+
 .sm {
   @media screen and (min-width: $sm) {
     display: none;
