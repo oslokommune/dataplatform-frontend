@@ -1,11 +1,5 @@
 <template>
   <div>
-    <!-- TOOO: Remove, this is only a proof of concept. -->
-    <button @click="login()">Logg inn</button>
-    <button @click="logout()">Logg ut</button>
-    Is authenticated: {{ isAuthenticated }}
-    <div v-if="isAuthenticated">You are: {{ user.name }}</div>
-
     <div class="intro-text">
       <h1>Dine datasett</h1>
       <p>Her finner du informasjon om de datasettene du eier.</p>
@@ -89,7 +83,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions, mapState } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 import DatasetStatus from '@/modules/DatasetList/DatasetStatus'
 import ExpandableRow from '@/components/ExpandableRow'
@@ -101,6 +95,7 @@ import Pagination from './Pagination'
 
 export default {
   name: 'DatasetList',
+
   components: {
     DatasetStatus,
     ExpandableRow,
@@ -109,9 +104,11 @@ export default {
     Loader,
     Pagination,
   },
+
   created() {
     this.fetchDatasets(this.currentPage)
   },
+
   watch: {
     $route(to, from) {
       if (to.query.page !== from.query.page) {
@@ -119,16 +116,12 @@ export default {
       }
     },
   },
-  mounted() {
-    this.refreshUser()
-  },
+
   computed: {
     currentPage() {
       const pageFromQuery = parseInt(this.$route.query.page, 10)
       return isNaN(pageFromQuery) ? 1 : Math.max(1, pageFromQuery)
     },
-    ...mapState('auth', ['user']),
-    ...mapGetters('auth', ['isAuthenticated']),
     ...mapGetters('datasetList', [
       'errorCode',
       'loading',
@@ -136,12 +129,12 @@ export default {
       'pageCount',
     ]),
   },
+
   methods: {
+    ...mapActions('datasetList', ['fetchDatasets', 'nextPage', 'prevPage']),
     handlePageChange(newPage) {
       this.$router.push({ path: '/', query: { page: newPage } })
     },
-    ...mapActions('auth', ['refreshUser', 'login', 'logout']),
-    ...mapActions('datasetList', ['fetchDatasets', 'nextPage', 'prevPage']),
   },
 }
 </script>
@@ -150,16 +143,20 @@ export default {
 .intro {
   font-size: $font-size-ingress;
 }
+
 .dataset-list {
   margin-top: 4em;
 }
+
 .details dt {
   margin-top: 20px;
   font-weight: 600;
 }
+
 .IconDotDotHorizontal {
   margin-right: 1em;
 }
+
 .error-text {
   color: $ok-state-danger;
 }

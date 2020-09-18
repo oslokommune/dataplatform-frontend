@@ -57,6 +57,11 @@ Runtime environment is achieved by `entrypoint.sh`, which edits `index.html` whe
 
 Set variables like so: `docker run -e VUE_APP_BASE_URL=datasets.no -e OTHER_VARIABLE=42`
 
+## Developer guide
+Core functionality like `isAuthenticated` and other Voodo magic.
+
+See the [developer guide](docs/developer-guide.md).
+
 ## Vulnerabilities
 
 See the [vulnerability overview](docs/vulnerabilities.md).

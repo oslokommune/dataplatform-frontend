@@ -3,6 +3,7 @@ process.env.VUE_APP_VERSION = require('./package.json').version
 const autoLoadedScssImports = `
   @import '@/assets/styles/variables.scss';
   @import '@/assets/styles/common.scss';
+  @import '@/assets/styles/mixins/mixins.scss';
   @import '@/assets/styles/mixins/breakpoints.scss';
 `
 
