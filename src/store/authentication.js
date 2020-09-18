@@ -52,7 +52,6 @@ export const actions = {
 
   login(context, redirectTo) {
     if (!redirectTo) {
-      console.log(router.history.current.fullPath)
       redirectTo = env.VUE_APP_BASE_URL + router.history.current.fullPath
     }
 

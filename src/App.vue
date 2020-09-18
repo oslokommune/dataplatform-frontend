@@ -1,8 +1,6 @@
 <template>
   <div id="app" class="page">
-    <header>
-      <nav></nav>
-    </header>
+    <Header />
     <main class="centered-container full-height">
       <router-view />
     </main>
@@ -11,9 +9,13 @@
 </template>
 <script>
 import Footer from './app/Footer'
+import auth from '@/mixins/auth'
 import 'normalize.css'
+import Header from './modules/header/Header'
+
 export default {
   components: {
+    Header,
     Footer,
   },
 
@@ -30,9 +32,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  text-align: center;
+.Header {
+  margin-bottom: $header-bottom-margin;
 }
+
 a {
   color: $font-color;
 }
