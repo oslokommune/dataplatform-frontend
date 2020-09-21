@@ -9,6 +9,7 @@ import env from '@/utils/env'
 import router from '@/router'
 
 export const state = () => ({
+  loadingUser: false,
   user: null,
 })
 
@@ -19,6 +20,10 @@ export const getters = {
 }
 
 export const mutations = {
+  setLoadingUser(state, loadingUser) {
+    state.loadingUser = loadingUser
+  },
+
   resetUser(state) {
     state.user = null
   },
@@ -34,11 +39,14 @@ export const actions = {
       return getters['loggedInUser']
     }
 
+    commit('setLoadingUser', true)
     try {
       const { data } = await this.$axios.get('/userinfo')
 
       commit('setUser', data)
+      commit('setLoadingUser', false)
     } catch (error) {
+      commit('setLoadingUser', false)
       if (error.response) {
         if (401 === error.response.status) {
           return null // Ignore 401, it's expected due to many users not being logged in
