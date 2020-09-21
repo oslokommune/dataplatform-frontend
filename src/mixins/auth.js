@@ -2,7 +2,7 @@ import { mapState, mapGetters, mapActions } from 'vuex'
 
 export default {
   computed: {
-    ...mapState('auth', ['user']),
+    ...mapState('auth', ['loadingUser', 'user']),
     ...mapGetters('auth', ['isAuthenticated']),
   },
   methods: {

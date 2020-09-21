@@ -1,94 +1,88 @@
 <template>
   <div class="dataset-module">
-    <Loader v-if="loading" center>Henter datasett</Loader>
+    <template v-if="!loadingUser && !isAuthenticated">
+      <h1>Dine datasett</h1>
+      <p>Du må logge inn for å se dine datasett.</p>
+      <p>
+        <Button @click.prevent="login()">Logg inn</Button>
+      </p>
+    </template>
+    <template v-else>
+      <Loader v-if="loading">Henter datasett</Loader>
 
-    <HttpError v-if="errorCode" :error="errorCode">
-      Kunne ikke hente datasett
-    </HttpError>
-    <div v-if="dataset" class="dataset">
-      <DetailsSidebar>
-        <!-- TODO What should be here? -->
-        <template v-slot:links>
-          <a href="#">Lenke en</a>
-          <a href="#">Lenke to</a>
-          <a href="#">Lenke tre</a>
-          <a href="#">Lenke fire</a>
-        </template>
+      <HttpError v-if="errorCode" :error="errorCode">
+        Kunne ikke hente datasett
+      </HttpError>
+      <div v-if="dataset" class="dataset">
+        <article class="content">
+          <h1>{{ dataset.title }}</h1>
 
-        <template v-slot:buttons>
-          <Button>Knapp en</Button>
-          <Button variant="secondary">Knapp to</Button>
-          <Button disabled>Knapp tre</Button>
-        </template>
-      </DetailsSidebar>
+          <div class="section">
+            <h2>Beskrivelse</h2>
 
-      <article class="content">
-        <h1>{{ dataset.title }}</h1>
+            <p>{{ dataset.description }}</p>
+          </div>
 
-        <div class="section">
-          <h2>Beskrivelse</h2>
+          <div class="section">
+            <h2>Detaljer</h2>
 
-          <p>{{ dataset.description }}</p>
-        </div>
+            <p>
+              <strong>Formål:</strong>
+              <span>{{ dataset.objective }}</span>
+            </p>
 
-        <div class="section">
-          <h2>Detaljer</h2>
+            <p>
+              <strong>Prosesseringstilstand:</strong>
+              <span>{{ dataset.processing_stage }}</span>
+            </p>
 
-          <p>
-            <strong>Formål:</strong>
-            <span>{{ dataset.objective }}</span>
-          </p>
+            <p>
+              <strong>Tilgangsnivå:</strong>
 
-          <p>
-            <strong>Prosesseringstilstand:</strong>
-            <span>{{ dataset.processing_stage }}</span>
-          </p>
+              <span v-if="dataset.accessRights === 'public'">
+                <IconLockSolidUnlocked /> Datasettet er offentlig tilgjengelig
+              </span>
+              <span v-else-if="dataset.accessRights === 'restricted'">
+                <IconLockSolidLocked /> Datasettet har begrenset offentlig
+                tilgang
+              </span>
+              <span v-else-if="dataset.accessRights === 'non-public'">
+                <IconLockSolidLocked /> Datasettet er unntatt offentligheten
+              </span>
+              <span v-else>
+                <IconLockSolidLocked /> Datasettet har ukjent tilgangsnivå
+              </span>
+            </p>
 
-          <p>
-            <strong>Tilgangsnivå:</strong>
+            <p>
+              <strong>Kontakt:</strong>
+              <span
+                >{{ dataset.contactPoint.name }} ({{
+                  dataset.contactPoint.email
+                }})</span
+              >
+            </p>
 
-            <span v-if="dataset.accessRights === 'public'">
-              <IconLockSolidUnlocked /> Datasettet er offentlig tilgjengelig
-            </span>
-            <span v-else-if="dataset.accessRights === 'restricted'">
-              <IconLockSolidLocked /> Datasettet har begrenset offentlig tilgang
-            </span>
-            <span v-else-if="dataset.accessRights === 'non-public'">
-              <IconLockSolidLocked /> Datasettet er unntatt offentligheten
-            </span>
-            <span v-else>
-              <IconLockSolidLocked /> Datasettet har ukjent tilgangsnivå
-            </span>
-          </p>
+            <p>
+              <strong>Nøkkelord:</strong>
+              <span>{{ dataset.keywords.join(', ') }}</span>
+            </p>
+          </div>
 
-          <p>
-            <strong>Kontakt:</strong>
-            <span
-              >{{ dataset.contactPoint.name }} ({{
-                dataset.contactPoint.email
-              }})</span
-            >
-          </p>
+          <div class="secton">
+            <h2>Utgivelser</h2>
 
-          <p>
-            <strong>Nøkkelord:</strong>
-            <span>{{ dataset.keywords.join(', ') }}</span>
-          </p>
-        </div>
-
-        <div class="secton">
-          <h2>Utgivelser</h2>
-
-          <Editions :datasetId="dataset.Id" />
-        </div>
-      </article>
-    </div>
+            <Editions :datasetId="dataset.Id" />
+          </div>
+        </article>
+      </div>
+    </template>
   </div>
 </template>
 
 <script>
+import auth from '@/mixins/auth'
 import Button from '@/components/buttons/Button'
-import DetailsSidebar from '@/components/Layout/DetailsSidebar'
 import HttpError from '@/components/Alert/HttpError'
 import IconLockSolidLocked from '@/components/icons/IconLockSolidLocked'
 import IconLockSolidUnlocked from '@/components/icons/IconLockSolidUnlocked'
@@ -100,13 +94,13 @@ export default {
   name: 'Dataset',
   components: {
     Button,
-    DetailsSidebar,
     Editions,
     HttpError,
     IconLockSolidLocked,
     IconLockSolidUnlocked,
     Loader,
   },
+  mixins: [auth],
   data() {
     return {
       dataset: null,
