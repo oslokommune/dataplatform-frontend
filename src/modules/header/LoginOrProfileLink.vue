@@ -26,7 +26,6 @@
 import IconUser from '@/components/icons/IconUser'
 import auth from '@/mixins/auth'
 import UserDropdown from '@/modules/header/UserDropdown'
-import { mapActions, mapGetters, mapState } from 'vuex'
 
 export default {
   components: {
@@ -36,13 +35,6 @@ export default {
   mixins: [auth],
   props: {
     active: Boolean,
-  },
-  computed: {
-    ...mapState('auth', ['user']),
-    ...mapGetters('auth', ['isAuthenticated']),
-  },
-  methods: {
-    ...mapActions('auth', ['refreshUser', 'login', 'logout']),
   },
 }
 </script>
