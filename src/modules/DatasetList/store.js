@@ -90,14 +90,24 @@ export const actions = {
           id: datasetId,
           ...data,
         }))
-        .catch((error) => ({
-          id: datasetId,
-          errorCode: error?.response?.status || 'noResponse',
-        }))
+        .catch((error) => {
+          // Backend does not handle deleted datasets.
+          // If dataset is missing, assume it is deleted and remove it from the list.
+          if (error?.response?.status) {
+            return null
+          }
+
+          return {
+            id: datasetId,
+            errorCode: error?.response?.status || 'noResponse',
+          }
+        })
     )
     const responses = await Promise.all(requests)
 
-    commit('setDatasetsData', responses)
+    const datasets = responses.filter((response) => response !== null)
+
+    commit('setDatasetsData', datasets)
     commit('setLoading', false)
   },
   async nextPage({ commit, state }) {
