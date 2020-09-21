@@ -33,9 +33,6 @@
             <template v-slot:status>
               <p>Status</p>
             </template>
-            <template v-slot:edit>
-              <p>Verktøy</p>
-            </template>
             <template v-slot:details>
               <p>Detaljer</p>
             </template>
@@ -71,9 +68,6 @@
                 <dd>Feil struktur</dd>
               </dl>
             </template>
-            <template v-slot:edit>
-              <a href="#"> <IconDotDotHorizontal /></a>
-            </template>
           </ExpandableRow>
         </div>
         <div v-else-if="!errorCode">
@@ -99,7 +93,6 @@ import Button from '@/components/buttons/Button'
 import DatasetStatus from '@/modules/DatasetList/DatasetStatus'
 import ExpandableRow from '@/components/ExpandableRow'
 import HttpError from '@/components/Alert/HttpError'
-import IconDotDotHorizontal from '@/components/icons/IconDotDotHorizontal'
 import Loader from '@/components/Loader'
 
 import Pagination from './Pagination'
@@ -112,7 +105,6 @@ export default {
     DatasetStatus,
     ExpandableRow,
     HttpError,
-    IconDotDotHorizontal,
     Loader,
     Pagination,
   },
