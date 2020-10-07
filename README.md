@@ -57,6 +57,9 @@ Runtime environment is achieved by `entrypoint.sh`, which edits `index.html` whe
 
 Set variables like so: `docker run -e VUE_APP_BASE_URL=datasets.no -e OTHER_VARIABLE=42`
 
+## Deployment
+This application is deployed automatically to dev whenever a new version is pushed to [GHCR](https://github.blog/2020-09-01-introducing-github-container-registry/)
+
 ## Developer guide
 Core functionality like `isAuthenticated` and other Voodo magic.
 
