@@ -1,6 +1,5 @@
 ### Dependency stage
 FROM node:lts-alpine AS dep-stage
-ARG NPM_TOKEN
 
 WORKDIR /build
 
