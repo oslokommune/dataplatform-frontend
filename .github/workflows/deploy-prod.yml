@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+
+jobs:
+    # Deploy service to prod
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+
+      - name: Deploy dataplatform-frontend on prod
+        run: |
+          aws ecs update-service --force-new-deployment --service dataplatform-frontend --cluster dataplatform-public
