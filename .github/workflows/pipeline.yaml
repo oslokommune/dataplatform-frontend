@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: |
-        git config --global user.name 'Github Actions'
-        git config --global user.email 'action@github.com'
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'action@github.com'
 
       - name: Setup node.js 12
         uses: actions/setup-node@v2
