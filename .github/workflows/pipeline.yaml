@@ -47,4 +47,4 @@ jobs:
             ghcr.io/oslokommune/ok-origo-dataplatform/dataplatform-frontend:${{ steps.version-bump.outputs.RELEASE_VERSION }}
 
       - name: Push version bump
-        run: git push --tags
+        run: git push --follow-tags
