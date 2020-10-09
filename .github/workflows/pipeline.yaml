@@ -30,13 +30,6 @@ jobs:
 
       - run: echo "::set-env name=RELEASE_VERSION::$(jq -r .version package.json)"
 
-      - name: Login to Github Packages
-        uses: docker/login-action@v1 
-        with:
-          registry: docker.pkg.github.com
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v1 
         with:
@@ -51,7 +44,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            docker.pkg.github.com/oslokommune/dataplatform-frontend:latest
-            docker.pkg.github.com/oslokommune/dataplatform-frontend:${{ env.RELEASE_VERSION }}
             ghcr.io/oslokommune/ok-origo-dataplatform/dataplatform-frontend:latest
             ghcr.io/oslokommune/ok-origo-dataplatform/dataplatform-frontend:${{ env.RELEASE_VERSION }}
