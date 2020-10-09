@@ -21,7 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   publish:
-    name: Publish to github packages and github container registry
+    name: Publish to Github Container Registry
     needs: bump
     runs-on: ubuntu-latest
 
