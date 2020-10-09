@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: |
+      - name: Configure git name and email
+        run: |
           git config --global user.name 'Github Actions'
           git config --global user.email 'action@github.com'
 
