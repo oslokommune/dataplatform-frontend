@@ -7,7 +7,6 @@ on:
 jobs:
   bump:
     name: Bump version
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # Fetch code
