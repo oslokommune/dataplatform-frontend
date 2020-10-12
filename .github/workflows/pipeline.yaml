@@ -52,7 +52,7 @@ jobs:
   # Deploy service to dev
   deploy:
     name: Redeploy app
-    needs: push
+    needs: bump-and-publish
 
     runs-on: ubuntu-latest
 
